@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/builds/project-0/Enum.h
+/builds/antonvovk/interpreter/Enum.h
 cstddef
 -
 cstring
@@ -16,169 +16,169 @@ iosfwd
 stdexcept
 -
 
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 Utils.h
-/builds/project-0/Utils.h
+/builds/antonvovk/interpreter/Utils.h
 Token.h
-/builds/project-0/Token.h
+/builds/antonvovk/interpreter/Token.h
 
-/builds/project-0/Expressions/Assign.cpp
+/builds/antonvovk/interpreter/Expressions/Assign.cpp
 Assign.h
-/builds/project-0/Expressions/Assign.h
+/builds/antonvovk/interpreter/Expressions/Assign.h
 
-/builds/project-0/Expressions/Assign.h
+/builds/antonvovk/interpreter/Expressions/Assign.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Binary.cpp
+/builds/antonvovk/interpreter/Expressions/Binary.cpp
 Binary.h
-/builds/project-0/Expressions/Binary.h
+/builds/antonvovk/interpreter/Expressions/Binary.h
 
-/builds/project-0/Expressions/Binary.h
+/builds/antonvovk/interpreter/Expressions/Binary.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Call.cpp
+/builds/antonvovk/interpreter/Expressions/Call.cpp
 Call.h
-/builds/project-0/Expressions/Call.h
+/builds/antonvovk/interpreter/Expressions/Call.h
 
-/builds/project-0/Expressions/Call.h
+/builds/antonvovk/interpreter/Expressions/Call.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Get.cpp
+/builds/antonvovk/interpreter/Expressions/Get.cpp
 Get.h
-/builds/project-0/Expressions/Get.h
+/builds/antonvovk/interpreter/Expressions/Get.h
 
-/builds/project-0/Expressions/Get.h
+/builds/antonvovk/interpreter/Expressions/Get.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Grouping.cpp
+/builds/antonvovk/interpreter/Expressions/Grouping.cpp
 Grouping.h
-/builds/project-0/Expressions/Grouping.h
+/builds/antonvovk/interpreter/Expressions/Grouping.h
 
-/builds/project-0/Expressions/Grouping.h
+/builds/antonvovk/interpreter/Expressions/Grouping.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Literal.cpp
+/builds/antonvovk/interpreter/Expressions/Literal.cpp
 Literal.h
-/builds/project-0/Expressions/Literal.h
+/builds/antonvovk/interpreter/Expressions/Literal.h
 
-/builds/project-0/Expressions/Literal.h
+/builds/antonvovk/interpreter/Expressions/Literal.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Logical.cpp
+/builds/antonvovk/interpreter/Expressions/Logical.cpp
 Logical.h
-/builds/project-0/Expressions/Logical.h
+/builds/antonvovk/interpreter/Expressions/Logical.h
 
-/builds/project-0/Expressions/Logical.h
+/builds/antonvovk/interpreter/Expressions/Logical.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Set.cpp
+/builds/antonvovk/interpreter/Expressions/Set.cpp
 Set.h
-/builds/project-0/Expressions/Set.h
+/builds/antonvovk/interpreter/Expressions/Set.h
 
-/builds/project-0/Expressions/Set.h
+/builds/antonvovk/interpreter/Expressions/Set.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Super.cpp
+/builds/antonvovk/interpreter/Expressions/Super.cpp
 Super.h
-/builds/project-0/Expressions/Super.h
+/builds/antonvovk/interpreter/Expressions/Super.h
 
-/builds/project-0/Expressions/Super.h
+/builds/antonvovk/interpreter/Expressions/Super.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/This.cpp
+/builds/antonvovk/interpreter/Expressions/This.cpp
 This.h
-/builds/project-0/Expressions/This.h
+/builds/antonvovk/interpreter/Expressions/This.h
 
-/builds/project-0/Expressions/This.h
+/builds/antonvovk/interpreter/Expressions/This.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Unary.cpp
+/builds/antonvovk/interpreter/Expressions/Unary.cpp
 Unary.h
-/builds/project-0/Expressions/Unary.h
+/builds/antonvovk/interpreter/Expressions/Unary.h
 
-/builds/project-0/Expressions/Unary.h
+/builds/antonvovk/interpreter/Expressions/Unary.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Expressions/Variable.cpp
+/builds/antonvovk/interpreter/Expressions/Variable.cpp
 Variable.h
-/builds/project-0/Expressions/Variable.h
+/builds/antonvovk/interpreter/Expressions/Variable.h
 
-/builds/project-0/Expressions/Variable.h
+/builds/antonvovk/interpreter/Expressions/Variable.h
 ../Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Main.cpp
+/builds/antonvovk/interpreter/Main.cpp
 Scanner.h
-/builds/project-0/Scanner.h
+/builds/antonvovk/interpreter/Scanner.h
 Token.h
-/builds/project-0/Token.h
+/builds/antonvovk/interpreter/Token.h
 Printer.h
-/builds/project-0/Printer.h
+/builds/antonvovk/interpreter/Printer.h
 Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 
-/builds/project-0/Printer.cpp
+/builds/antonvovk/interpreter/Printer.cpp
 Printer.h
-/builds/project-0/Printer.h
+/builds/antonvovk/interpreter/Printer.h
 
-/builds/project-0/Printer.h
+/builds/antonvovk/interpreter/Printer.h
 Expression.h
-/builds/project-0/Expression.h
+/builds/antonvovk/interpreter/Expression.h
 Expressions/Assign.h
-/builds/project-0/Expressions/Assign.h
+/builds/antonvovk/interpreter/Expressions/Assign.h
 Expressions/Binary.h
-/builds/project-0/Expressions/Binary.h
+/builds/antonvovk/interpreter/Expressions/Binary.h
 Expressions/Call.h
-/builds/project-0/Expressions/Call.h
+/builds/antonvovk/interpreter/Expressions/Call.h
 Expressions/Get.h
-/builds/project-0/Expressions/Get.h
+/builds/antonvovk/interpreter/Expressions/Get.h
 Expressions/Grouping.h
-/builds/project-0/Expressions/Grouping.h
+/builds/antonvovk/interpreter/Expressions/Grouping.h
 Expressions/Literal.h
-/builds/project-0/Expressions/Literal.h
+/builds/antonvovk/interpreter/Expressions/Literal.h
 Expressions/Logical.h
-/builds/project-0/Expressions/Logical.h
+/builds/antonvovk/interpreter/Expressions/Logical.h
 Expressions/Set.h
-/builds/project-0/Expressions/Set.h
+/builds/antonvovk/interpreter/Expressions/Set.h
 Expressions/Super.h
-/builds/project-0/Expressions/Super.h
+/builds/antonvovk/interpreter/Expressions/Super.h
 Expressions/This.h
-/builds/project-0/Expressions/This.h
+/builds/antonvovk/interpreter/Expressions/This.h
 Expressions/Unary.h
-/builds/project-0/Expressions/Unary.h
+/builds/antonvovk/interpreter/Expressions/Unary.h
 Expressions/Variable.h
-/builds/project-0/Expressions/Variable.h
+/builds/antonvovk/interpreter/Expressions/Variable.h
 
-/builds/project-0/Scanner.cpp
+/builds/antonvovk/interpreter/Scanner.cpp
 Scanner.h
-/builds/project-0/Scanner.h
+/builds/antonvovk/interpreter/Scanner.h
 
-/builds/project-0/Scanner.h
+/builds/antonvovk/interpreter/Scanner.h
 Utils.h
-/builds/project-0/Utils.h
+/builds/antonvovk/interpreter/Utils.h
 Token.h
-/builds/project-0/Token.h
+/builds/antonvovk/interpreter/Token.h
 
-/builds/project-0/Token.cpp
+/builds/antonvovk/interpreter/Token.cpp
 Token.h
-/builds/project-0/Token.h
+/builds/antonvovk/interpreter/Token.h
 
-/builds/project-0/Token.h
+/builds/antonvovk/interpreter/Token.h
 Utils.h
-/builds/project-0/Utils.h
+/builds/antonvovk/interpreter/Utils.h
 
-/builds/project-0/Utils.h
+/builds/antonvovk/interpreter/Utils.h
 iostream
 -
 fstream
@@ -192,5 +192,5 @@ map
 utility
 -
 Enum.h
-/builds/project-0/Enum.h
+/builds/antonvovk/interpreter/Enum.h
 

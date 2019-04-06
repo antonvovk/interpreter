@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/builds/project-0/Expressions/Assign.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o"
-  "/builds/project-0/Expressions/Binary.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o"
-  "/builds/project-0/Expressions/Call.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o"
-  "/builds/project-0/Expressions/Get.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o"
-  "/builds/project-0/Expressions/Grouping.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o"
-  "/builds/project-0/Expressions/Literal.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o"
-  "/builds/project-0/Expressions/Logical.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o"
-  "/builds/project-0/Expressions/Set.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o"
-  "/builds/project-0/Expressions/Super.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o"
-  "/builds/project-0/Expressions/This.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/This.cpp.o"
-  "/builds/project-0/Expressions/Unary.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o"
-  "/builds/project-0/Expressions/Variable.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o"
-  "/builds/project-0/Main.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Main.cpp.o"
-  "/builds/project-0/Printer.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Printer.cpp.o"
-  "/builds/project-0/Scanner.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Scanner.cpp.o"
-  "/builds/project-0/Token.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Token.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Assign.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Binary.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Call.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Get.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Grouping.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Literal.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Logical.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Set.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Super.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/This.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/This.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Unary.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o"
+  "/builds/antonvovk/interpreter/Expressions/Variable.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o"
+  "/builds/antonvovk/interpreter/Main.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Main.cpp.o"
+  "/builds/antonvovk/interpreter/Printer.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Printer.cpp.o"
+  "/builds/antonvovk/interpreter/Scanner.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Scanner.cpp.o"
+  "/builds/antonvovk/interpreter/Token.cpp" "/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Token.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

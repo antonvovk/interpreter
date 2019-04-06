@@ -1,3 +1,3 @@
-/builds/project-0/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir
-/builds/project-0/cmake-build-debug/CMakeFiles/edit_cache.dir
+/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir
+/builds/antonvovk/interpreter/cmake-build-debug/CMakeFiles/edit_cache.dir

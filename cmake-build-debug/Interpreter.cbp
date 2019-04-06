@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/builds/project-0/cmake-build-debug"/>
+				<Option working_dir="/builds/antonvovk/interpreter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/builds/project-0/cmake-build-debug"/>
+				<Option working_dir="/builds/antonvovk/interpreter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interpreter">
-				<Option output="/builds/project-0/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/builds/project-0/cmake-build-debug"/>
+				<Option output="/builds/antonvovk/interpreter/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/builds/antonvovk/interpreter/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -43,15 +43,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interpreter/fast">
-				<Option output="/builds/project-0/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/builds/project-0/cmake-build-debug"/>
+				<Option output="/builds/antonvovk/interpreter/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/builds/antonvovk/interpreter/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -65,126 +65,126 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/builds/project-0/cmake-build-debug"/>
+				<Option working_dir="/builds/antonvovk/interpreter/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/antonvovk/interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/builds/project-0/Enum.h">
+		<Unit filename="/builds/antonvovk/interpreter/Enum.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expression.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expression.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Assign.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Assign.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Assign.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Assign.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Binary.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Binary.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Binary.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Binary.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Call.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Call.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Call.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Call.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Get.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Get.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Get.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Get.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Grouping.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Grouping.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Grouping.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Grouping.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Literal.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Literal.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Literal.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Literal.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Logical.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Logical.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Logical.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Logical.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Set.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Set.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Set.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Set.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Super.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Super.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Super.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Super.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/This.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/This.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/This.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/This.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Unary.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Unary.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Unary.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Unary.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Variable.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Variable.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Expressions/Variable.h">
+		<Unit filename="/builds/antonvovk/interpreter/Expressions/Variable.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Main.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Main.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Printer.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Printer.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Printer.h">
+		<Unit filename="/builds/antonvovk/interpreter/Printer.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Scanner.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Scanner.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Scanner.h">
+		<Unit filename="/builds/antonvovk/interpreter/Scanner.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Token.cpp">
+		<Unit filename="/builds/antonvovk/interpreter/Token.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Token.h">
+		<Unit filename="/builds/antonvovk/interpreter/Token.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/Utils.h">
+		<Unit filename="/builds/antonvovk/interpreter/Utils.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/builds/project-0/CMakeLists.txt">
+		<Unit filename="/builds/antonvovk/interpreter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
