@@ -3,4 +3,8 @@ build:
 
   script: 
     - apt update && apt -y install cmake make gcc
+    - mkdir -p /builds
+    - mkdir -p /builds/antonvovk
+    - mkdir -p /builds/antonvovk/interpreter
+    - mkdir -p /builds/antonvovk/interpreter/cmake-build-debug
     - cmake --build cmake-build-debug --target Interpreter -- -j 2
