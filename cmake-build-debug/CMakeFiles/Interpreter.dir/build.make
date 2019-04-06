@@ -57,30 +57,60 @@ include CMakeFiles/Interpreter.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Interpreter.dir/flags.make
 
-CMakeFiles/Interpreter.dir/main.cpp.o: CMakeFiles/Interpreter.dir/flags.make
-CMakeFiles/Interpreter.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Interpreter.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/main.cpp.o -c /home/wolf/Documents/Interpreter/main.cpp
+CMakeFiles/Interpreter.dir/Main.cpp.o: CMakeFiles/Interpreter.dir/flags.make
+CMakeFiles/Interpreter.dir/Main.cpp.o: ../Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Interpreter.dir/Main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Main.cpp.o -c /home/wolf/Documents/Interpreter/Main.cpp
 
-CMakeFiles/Interpreter.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/main.cpp > CMakeFiles/Interpreter.dir/main.cpp.i
+CMakeFiles/Interpreter.dir/Main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Main.cpp > CMakeFiles/Interpreter.dir/Main.cpp.i
 
-CMakeFiles/Interpreter.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/main.cpp -o CMakeFiles/Interpreter.dir/main.cpp.s
+CMakeFiles/Interpreter.dir/Main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Main.cpp -o CMakeFiles/Interpreter.dir/Main.cpp.s
+
+CMakeFiles/Interpreter.dir/Token.cpp.o: CMakeFiles/Interpreter.dir/flags.make
+CMakeFiles/Interpreter.dir/Token.cpp.o: ../Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Interpreter.dir/Token.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Token.cpp.o -c /home/wolf/Documents/Interpreter/Token.cpp
+
+CMakeFiles/Interpreter.dir/Token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Token.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Token.cpp > CMakeFiles/Interpreter.dir/Token.cpp.i
+
+CMakeFiles/Interpreter.dir/Token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Token.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Token.cpp -o CMakeFiles/Interpreter.dir/Token.cpp.s
+
+CMakeFiles/Interpreter.dir/Scanner.cpp.o: CMakeFiles/Interpreter.dir/flags.make
+CMakeFiles/Interpreter.dir/Scanner.cpp.o: ../Scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Interpreter.dir/Scanner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Scanner.cpp.o -c /home/wolf/Documents/Interpreter/Scanner.cpp
+
+CMakeFiles/Interpreter.dir/Scanner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Scanner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Scanner.cpp > CMakeFiles/Interpreter.dir/Scanner.cpp.i
+
+CMakeFiles/Interpreter.dir/Scanner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Scanner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Scanner.cpp -o CMakeFiles/Interpreter.dir/Scanner.cpp.s
 
 # Object files for target Interpreter
 Interpreter_OBJECTS = \
-"CMakeFiles/Interpreter.dir/main.cpp.o"
+"CMakeFiles/Interpreter.dir/Main.cpp.o" \
+"CMakeFiles/Interpreter.dir/Token.cpp.o" \
+"CMakeFiles/Interpreter.dir/Scanner.cpp.o"
 
 # External object files for target Interpreter
 Interpreter_EXTERNAL_OBJECTS =
 
-Interpreter: CMakeFiles/Interpreter.dir/main.cpp.o
+Interpreter: CMakeFiles/Interpreter.dir/Main.cpp.o
+Interpreter: CMakeFiles/Interpreter.dir/Token.cpp.o
+Interpreter: CMakeFiles/Interpreter.dir/Scanner.cpp.o
 Interpreter: CMakeFiles/Interpreter.dir/build.make
 Interpreter: CMakeFiles/Interpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Interpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Interpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Interpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

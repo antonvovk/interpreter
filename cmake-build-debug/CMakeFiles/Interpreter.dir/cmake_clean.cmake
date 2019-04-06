@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Interpreter.dir/main.cpp.o"
+  "CMakeFiles/Interpreter.dir/Main.cpp.o"
+  "CMakeFiles/Interpreter.dir/Token.cpp.o"
+  "CMakeFiles/Interpreter.dir/Scanner.cpp.o"
   "Interpreter.pdb"
   "Interpreter"
 )

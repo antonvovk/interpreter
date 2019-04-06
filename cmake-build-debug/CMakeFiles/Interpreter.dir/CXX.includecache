@@ -6,7 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/wolf/Documents/Interpreter/main.cpp
+/home/wolf/Documents/Interpreter/Enum.h
+cstddef
+-
+cstring
+-
+iosfwd
+-
+stdexcept
+-
+
+/home/wolf/Documents/Interpreter/Scanner.cpp
+Scanner.h
+/home/wolf/Documents/Interpreter/Scanner.h
+
+/home/wolf/Documents/Interpreter/Scanner.h
+Utils.h
+/home/wolf/Documents/Interpreter/Utils.h
+Token.h
+/home/wolf/Documents/Interpreter/Token.h
+
+/home/wolf/Documents/Interpreter/Token.h
+Utils.h
+/home/wolf/Documents/Interpreter/Utils.h
+
+/home/wolf/Documents/Interpreter/Utils.h
 iostream
 -
+fstream
+-
+string
+-
+vector
+-
+map
+-
+utility
+-
+Enum.h
+/home/wolf/Documents/Interpreter/Enum.h
 

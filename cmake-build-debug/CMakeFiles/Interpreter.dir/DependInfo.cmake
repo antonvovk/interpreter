@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wolf/Documents/Interpreter/main.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/main.cpp.o"
+  "/home/wolf/Documents/Interpreter/Main.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Main.cpp.o"
+  "/home/wolf/Documents/Interpreter/Scanner.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Scanner.cpp.o"
+  "/home/wolf/Documents/Interpreter/Token.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Token.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

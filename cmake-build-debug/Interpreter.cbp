@@ -82,7 +82,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wolf/Documents/Interpreter/main.cpp">
+		<Unit filename="/home/wolf/Documents/Interpreter/Enum.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Main.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Scanner.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Scanner.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Token.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Token.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Utils.h">
 			<Option target="Interpreter"/>
 		</Unit>
 		<Unit filename="/home/wolf/Documents/Interpreter/CMakeLists.txt">

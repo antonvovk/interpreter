@@ -123,32 +123,86 @@ Interpreter/fast:
 	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/build
 .PHONY : Interpreter/fast
 
-main.o: main.cpp.o
+Main.o: Main.cpp.o
 
-.PHONY : main.o
+.PHONY : Main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/main.cpp.o
-.PHONY : main.cpp.o
+Main.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Main.cpp.o
+.PHONY : Main.cpp.o
 
-main.i: main.cpp.i
+Main.i: Main.cpp.i
 
-.PHONY : main.i
+.PHONY : Main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/main.cpp.i
-.PHONY : main.cpp.i
+Main.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Main.cpp.i
+.PHONY : Main.cpp.i
 
-main.s: main.cpp.s
+Main.s: Main.cpp.s
 
-.PHONY : main.s
+.PHONY : Main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/main.cpp.s
-.PHONY : main.cpp.s
+Main.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Main.cpp.s
+.PHONY : Main.cpp.s
+
+Scanner.o: Scanner.cpp.o
+
+.PHONY : Scanner.o
+
+# target to build an object file
+Scanner.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Scanner.cpp.o
+.PHONY : Scanner.cpp.o
+
+Scanner.i: Scanner.cpp.i
+
+.PHONY : Scanner.i
+
+# target to preprocess a source file
+Scanner.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Scanner.cpp.i
+.PHONY : Scanner.cpp.i
+
+Scanner.s: Scanner.cpp.s
+
+.PHONY : Scanner.s
+
+# target to generate assembly for a file
+Scanner.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Scanner.cpp.s
+.PHONY : Scanner.cpp.s
+
+Token.o: Token.cpp.o
+
+.PHONY : Token.o
+
+# target to build an object file
+Token.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Token.cpp.o
+.PHONY : Token.cpp.o
+
+Token.i: Token.cpp.i
+
+.PHONY : Token.i
+
+# target to preprocess a source file
+Token.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Token.cpp.i
+.PHONY : Token.cpp.i
+
+Token.s: Token.cpp.s
+
+.PHONY : Token.s
+
+# target to generate assembly for a file
+Token.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Token.cpp.s
+.PHONY : Token.cpp.s
 
 # Help Target
 help:
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Interpreter"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Main.o"
+	@echo "... Main.i"
+	@echo "... Main.s"
+	@echo "... Scanner.o"
+	@echo "... Scanner.i"
+	@echo "... Scanner.s"
+	@echo "... Token.o"
+	@echo "... Token.i"
+	@echo "... Token.s"
 .PHONY : help
 
 
