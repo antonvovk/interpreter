@@ -2,5 +2,6 @@ build:
   stage: build
 
   script: 
-    - apt -y install cmake make gcc
+    - sudo apt update -y
+    - sudo apt -y install cmake make gcc
     - cmake --build cmake-build-debug --target Interpreter -- -j 2
