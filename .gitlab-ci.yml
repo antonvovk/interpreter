@@ -2,5 +2,5 @@ image: node:latest
 
 build:
   script: 
-    - cd cd cmake-build-debug
-    - make
+    - cd cmake-build-debug
+    - /usr/bin/cmake --build /builds/project-0/cmake-build-debug --target Interpreter -- -j 4
