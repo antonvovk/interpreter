@@ -4,5 +4,4 @@ build:
     script:
         - apt-get -y update && apt -y install cmake make gcc
         - cmake CMakeLists.txt
-        - cd cmake-build-debug/
         - make
