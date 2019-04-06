@@ -123,6 +123,330 @@ Interpreter/fast:
 	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/build
 .PHONY : Interpreter/fast
 
+Expressions/Assign.o: Expressions/Assign.cpp.o
+
+.PHONY : Expressions/Assign.o
+
+# target to build an object file
+Expressions/Assign.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o
+.PHONY : Expressions/Assign.cpp.o
+
+Expressions/Assign.i: Expressions/Assign.cpp.i
+
+.PHONY : Expressions/Assign.i
+
+# target to preprocess a source file
+Expressions/Assign.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.i
+.PHONY : Expressions/Assign.cpp.i
+
+Expressions/Assign.s: Expressions/Assign.cpp.s
+
+.PHONY : Expressions/Assign.s
+
+# target to generate assembly for a file
+Expressions/Assign.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.s
+.PHONY : Expressions/Assign.cpp.s
+
+Expressions/Binary.o: Expressions/Binary.cpp.o
+
+.PHONY : Expressions/Binary.o
+
+# target to build an object file
+Expressions/Binary.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o
+.PHONY : Expressions/Binary.cpp.o
+
+Expressions/Binary.i: Expressions/Binary.cpp.i
+
+.PHONY : Expressions/Binary.i
+
+# target to preprocess a source file
+Expressions/Binary.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.i
+.PHONY : Expressions/Binary.cpp.i
+
+Expressions/Binary.s: Expressions/Binary.cpp.s
+
+.PHONY : Expressions/Binary.s
+
+# target to generate assembly for a file
+Expressions/Binary.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.s
+.PHONY : Expressions/Binary.cpp.s
+
+Expressions/Call.o: Expressions/Call.cpp.o
+
+.PHONY : Expressions/Call.o
+
+# target to build an object file
+Expressions/Call.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o
+.PHONY : Expressions/Call.cpp.o
+
+Expressions/Call.i: Expressions/Call.cpp.i
+
+.PHONY : Expressions/Call.i
+
+# target to preprocess a source file
+Expressions/Call.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Call.cpp.i
+.PHONY : Expressions/Call.cpp.i
+
+Expressions/Call.s: Expressions/Call.cpp.s
+
+.PHONY : Expressions/Call.s
+
+# target to generate assembly for a file
+Expressions/Call.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Call.cpp.s
+.PHONY : Expressions/Call.cpp.s
+
+Expressions/Get.o: Expressions/Get.cpp.o
+
+.PHONY : Expressions/Get.o
+
+# target to build an object file
+Expressions/Get.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o
+.PHONY : Expressions/Get.cpp.o
+
+Expressions/Get.i: Expressions/Get.cpp.i
+
+.PHONY : Expressions/Get.i
+
+# target to preprocess a source file
+Expressions/Get.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Get.cpp.i
+.PHONY : Expressions/Get.cpp.i
+
+Expressions/Get.s: Expressions/Get.cpp.s
+
+.PHONY : Expressions/Get.s
+
+# target to generate assembly for a file
+Expressions/Get.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Get.cpp.s
+.PHONY : Expressions/Get.cpp.s
+
+Expressions/Grouping.o: Expressions/Grouping.cpp.o
+
+.PHONY : Expressions/Grouping.o
+
+# target to build an object file
+Expressions/Grouping.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o
+.PHONY : Expressions/Grouping.cpp.o
+
+Expressions/Grouping.i: Expressions/Grouping.cpp.i
+
+.PHONY : Expressions/Grouping.i
+
+# target to preprocess a source file
+Expressions/Grouping.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.i
+.PHONY : Expressions/Grouping.cpp.i
+
+Expressions/Grouping.s: Expressions/Grouping.cpp.s
+
+.PHONY : Expressions/Grouping.s
+
+# target to generate assembly for a file
+Expressions/Grouping.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.s
+.PHONY : Expressions/Grouping.cpp.s
+
+Expressions/Literal.o: Expressions/Literal.cpp.o
+
+.PHONY : Expressions/Literal.o
+
+# target to build an object file
+Expressions/Literal.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o
+.PHONY : Expressions/Literal.cpp.o
+
+Expressions/Literal.i: Expressions/Literal.cpp.i
+
+.PHONY : Expressions/Literal.i
+
+# target to preprocess a source file
+Expressions/Literal.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.i
+.PHONY : Expressions/Literal.cpp.i
+
+Expressions/Literal.s: Expressions/Literal.cpp.s
+
+.PHONY : Expressions/Literal.s
+
+# target to generate assembly for a file
+Expressions/Literal.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.s
+.PHONY : Expressions/Literal.cpp.s
+
+Expressions/Logical.o: Expressions/Logical.cpp.o
+
+.PHONY : Expressions/Logical.o
+
+# target to build an object file
+Expressions/Logical.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o
+.PHONY : Expressions/Logical.cpp.o
+
+Expressions/Logical.i: Expressions/Logical.cpp.i
+
+.PHONY : Expressions/Logical.i
+
+# target to preprocess a source file
+Expressions/Logical.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.i
+.PHONY : Expressions/Logical.cpp.i
+
+Expressions/Logical.s: Expressions/Logical.cpp.s
+
+.PHONY : Expressions/Logical.s
+
+# target to generate assembly for a file
+Expressions/Logical.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.s
+.PHONY : Expressions/Logical.cpp.s
+
+Expressions/Set.o: Expressions/Set.cpp.o
+
+.PHONY : Expressions/Set.o
+
+# target to build an object file
+Expressions/Set.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o
+.PHONY : Expressions/Set.cpp.o
+
+Expressions/Set.i: Expressions/Set.cpp.i
+
+.PHONY : Expressions/Set.i
+
+# target to preprocess a source file
+Expressions/Set.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Set.cpp.i
+.PHONY : Expressions/Set.cpp.i
+
+Expressions/Set.s: Expressions/Set.cpp.s
+
+.PHONY : Expressions/Set.s
+
+# target to generate assembly for a file
+Expressions/Set.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Set.cpp.s
+.PHONY : Expressions/Set.cpp.s
+
+Expressions/Super.o: Expressions/Super.cpp.o
+
+.PHONY : Expressions/Super.o
+
+# target to build an object file
+Expressions/Super.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o
+.PHONY : Expressions/Super.cpp.o
+
+Expressions/Super.i: Expressions/Super.cpp.i
+
+.PHONY : Expressions/Super.i
+
+# target to preprocess a source file
+Expressions/Super.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Super.cpp.i
+.PHONY : Expressions/Super.cpp.i
+
+Expressions/Super.s: Expressions/Super.cpp.s
+
+.PHONY : Expressions/Super.s
+
+# target to generate assembly for a file
+Expressions/Super.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Super.cpp.s
+.PHONY : Expressions/Super.cpp.s
+
+Expressions/This.o: Expressions/This.cpp.o
+
+.PHONY : Expressions/This.o
+
+# target to build an object file
+Expressions/This.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/This.cpp.o
+.PHONY : Expressions/This.cpp.o
+
+Expressions/This.i: Expressions/This.cpp.i
+
+.PHONY : Expressions/This.i
+
+# target to preprocess a source file
+Expressions/This.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/This.cpp.i
+.PHONY : Expressions/This.cpp.i
+
+Expressions/This.s: Expressions/This.cpp.s
+
+.PHONY : Expressions/This.s
+
+# target to generate assembly for a file
+Expressions/This.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/This.cpp.s
+.PHONY : Expressions/This.cpp.s
+
+Expressions/Unary.o: Expressions/Unary.cpp.o
+
+.PHONY : Expressions/Unary.o
+
+# target to build an object file
+Expressions/Unary.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o
+.PHONY : Expressions/Unary.cpp.o
+
+Expressions/Unary.i: Expressions/Unary.cpp.i
+
+.PHONY : Expressions/Unary.i
+
+# target to preprocess a source file
+Expressions/Unary.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.i
+.PHONY : Expressions/Unary.cpp.i
+
+Expressions/Unary.s: Expressions/Unary.cpp.s
+
+.PHONY : Expressions/Unary.s
+
+# target to generate assembly for a file
+Expressions/Unary.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.s
+.PHONY : Expressions/Unary.cpp.s
+
+Expressions/Variable.o: Expressions/Variable.cpp.o
+
+.PHONY : Expressions/Variable.o
+
+# target to build an object file
+Expressions/Variable.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o
+.PHONY : Expressions/Variable.cpp.o
+
+Expressions/Variable.i: Expressions/Variable.cpp.i
+
+.PHONY : Expressions/Variable.i
+
+# target to preprocess a source file
+Expressions/Variable.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.i
+.PHONY : Expressions/Variable.cpp.i
+
+Expressions/Variable.s: Expressions/Variable.cpp.s
+
+.PHONY : Expressions/Variable.s
+
+# target to generate assembly for a file
+Expressions/Variable.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.s
+.PHONY : Expressions/Variable.cpp.s
+
 Main.o: Main.cpp.o
 
 .PHONY : Main.o
@@ -149,6 +473,33 @@ Main.s: Main.cpp.s
 Main.cpp.s:
 	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+Printer.o: Printer.cpp.o
+
+.PHONY : Printer.o
+
+# target to build an object file
+Printer.cpp.o:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Printer.cpp.o
+.PHONY : Printer.cpp.o
+
+Printer.i: Printer.cpp.i
+
+.PHONY : Printer.i
+
+# target to preprocess a source file
+Printer.cpp.i:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Printer.cpp.i
+.PHONY : Printer.cpp.i
+
+Printer.s: Printer.cpp.s
+
+.PHONY : Printer.s
+
+# target to generate assembly for a file
+Printer.cpp.s:
+	$(MAKE) -f CMakeFiles/Interpreter.dir/build.make CMakeFiles/Interpreter.dir/Printer.cpp.s
+.PHONY : Printer.cpp.s
 
 Scanner.o: Scanner.cpp.o
 
@@ -213,9 +564,48 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Interpreter"
 	@echo "... edit_cache"
+	@echo "... Expressions/Assign.o"
+	@echo "... Expressions/Assign.i"
+	@echo "... Expressions/Assign.s"
+	@echo "... Expressions/Binary.o"
+	@echo "... Expressions/Binary.i"
+	@echo "... Expressions/Binary.s"
+	@echo "... Expressions/Call.o"
+	@echo "... Expressions/Call.i"
+	@echo "... Expressions/Call.s"
+	@echo "... Expressions/Get.o"
+	@echo "... Expressions/Get.i"
+	@echo "... Expressions/Get.s"
+	@echo "... Expressions/Grouping.o"
+	@echo "... Expressions/Grouping.i"
+	@echo "... Expressions/Grouping.s"
+	@echo "... Expressions/Literal.o"
+	@echo "... Expressions/Literal.i"
+	@echo "... Expressions/Literal.s"
+	@echo "... Expressions/Logical.o"
+	@echo "... Expressions/Logical.i"
+	@echo "... Expressions/Logical.s"
+	@echo "... Expressions/Set.o"
+	@echo "... Expressions/Set.i"
+	@echo "... Expressions/Set.s"
+	@echo "... Expressions/Super.o"
+	@echo "... Expressions/Super.i"
+	@echo "... Expressions/Super.s"
+	@echo "... Expressions/This.o"
+	@echo "... Expressions/This.i"
+	@echo "... Expressions/This.s"
+	@echo "... Expressions/Unary.o"
+	@echo "... Expressions/Unary.i"
+	@echo "... Expressions/Unary.s"
+	@echo "... Expressions/Variable.o"
+	@echo "... Expressions/Variable.i"
+	@echo "... Expressions/Variable.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... Printer.o"
+	@echo "... Printer.i"
+	@echo "... Printer.s"
 	@echo "... Scanner.o"
 	@echo "... Scanner.i"
 	@echo "... Scanner.s"

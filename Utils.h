@@ -10,6 +10,7 @@
 #include "Enum.h"
 
 #define interface class
+#define abstract
 
 using String = std::string;
 using File = std::ifstream;

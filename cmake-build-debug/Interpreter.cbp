@@ -85,7 +85,88 @@
 		<Unit filename="/home/wolf/Documents/Interpreter/Enum.h">
 			<Option target="Interpreter"/>
 		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expression.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Assign.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Assign.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Binary.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Binary.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Call.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Call.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Get.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Get.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Grouping.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Grouping.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Literal.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Literal.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Logical.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Logical.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Set.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Set.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Super.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Super.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/This.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/This.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Unary.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Unary.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Variable.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Variable.h">
+			<Option target="Interpreter"/>
+		</Unit>
 		<Unit filename="/home/wolf/Documents/Interpreter/Main.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Printer.cpp">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Printer.h">
 			<Option target="Interpreter"/>
 		</Unit>
 		<Unit filename="/home/wolf/Documents/Interpreter/Scanner.cpp">
@@ -101,6 +182,9 @@
 			<Option target="Interpreter"/>
 		</Unit>
 		<Unit filename="/home/wolf/Documents/Interpreter/Utils.h">
+			<Option target="Interpreter"/>
+		</Unit>
+		<Unit filename="/home/wolf/Documents/Interpreter/Visitor.h">
 			<Option target="Interpreter"/>
 		</Unit>
 		<Unit filename="/home/wolf/Documents/Interpreter/CMakeLists.txt">
