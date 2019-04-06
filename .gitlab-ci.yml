@@ -2,11 +2,5 @@ image: node:latest
 
 build:
   script: 
-    - apt update && apt -y install cmake make gcc
-    - mkdir -p /builds
-    - mkdir -p /builds/antonvovk
-    - mkdir -p /builds/antonvovk/interpreter
-    - mkdir -p /builds/antonvovk/interpreter/cmake-build-debug
-    - rm -rf /builds/antonvovk/interpreter/cmake-build-debug/CMakeCache.txt
-    - /usr/bin/cmake --build /builds/antonvovk/interpreter/cmake-build-debug --target clean -- -j 4
-    - /usr/bin/cmake --build /builds/antonvovk/interpreter/cmake-build-debug --target Interpreter -- -j 4
+    - cd cd cmake-build-debug
+    - make

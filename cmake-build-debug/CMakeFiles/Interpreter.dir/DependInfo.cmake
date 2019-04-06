@@ -4,22 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/wolf/Documents/Interpreter/Expressions/Assign.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Binary.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Call.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Get.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Grouping.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Literal.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Logical.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Set.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Super.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/This.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/This.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Unary.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o"
-  "/home/wolf/Documents/Interpreter/Expressions/Variable.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o"
-  "/home/wolf/Documents/Interpreter/Main.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Main.cpp.o"
-  "/home/wolf/Documents/Interpreter/Printer.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Printer.cpp.o"
-  "/home/wolf/Documents/Interpreter/Scanner.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Scanner.cpp.o"
-  "/home/wolf/Documents/Interpreter/Token.cpp" "/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/Token.cpp.o"
+  "/builds/project-0/Expressions/Assign.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o"
+  "/builds/project-0/Expressions/Binary.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o"
+  "/builds/project-0/Expressions/Call.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o"
+  "/builds/project-0/Expressions/Get.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o"
+  "/builds/project-0/Expressions/Grouping.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o"
+  "/builds/project-0/Expressions/Literal.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o"
+  "/builds/project-0/Expressions/Logical.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o"
+  "/builds/project-0/Expressions/Set.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o"
+  "/builds/project-0/Expressions/Super.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o"
+  "/builds/project-0/Expressions/This.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/This.cpp.o"
+  "/builds/project-0/Expressions/Unary.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o"
+  "/builds/project-0/Expressions/Variable.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o"
+  "/builds/project-0/Main.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Main.cpp.o"
+  "/builds/project-0/Printer.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Printer.cpp.o"
+  "/builds/project-0/Scanner.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Scanner.cpp.o"
+  "/builds/project-0/Token.cpp" "/builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/Token.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

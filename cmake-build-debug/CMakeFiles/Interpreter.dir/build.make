@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wolf/Documents/Interpreter
+CMAKE_SOURCE_DIR = /builds/project-0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wolf/Documents/Interpreter/cmake-build-debug
+CMAKE_BINARY_DIR = /builds/project-0/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Interpreter.dir/depend.make
@@ -59,211 +59,211 @@ include CMakeFiles/Interpreter.dir/flags.make
 
 CMakeFiles/Interpreter.dir/Main.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Main.cpp.o: ../Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Interpreter.dir/Main.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Main.cpp.o -c /home/wolf/Documents/Interpreter/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Interpreter.dir/Main.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Main.cpp.o -c /builds/project-0/Main.cpp
 
 CMakeFiles/Interpreter.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Main.cpp > CMakeFiles/Interpreter.dir/Main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Main.cpp > CMakeFiles/Interpreter.dir/Main.cpp.i
 
 CMakeFiles/Interpreter.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Main.cpp -o CMakeFiles/Interpreter.dir/Main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Main.cpp -o CMakeFiles/Interpreter.dir/Main.cpp.s
 
 CMakeFiles/Interpreter.dir/Token.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Token.cpp.o: ../Token.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Interpreter.dir/Token.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Token.cpp.o -c /home/wolf/Documents/Interpreter/Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Interpreter.dir/Token.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Token.cpp.o -c /builds/project-0/Token.cpp
 
 CMakeFiles/Interpreter.dir/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Token.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Token.cpp > CMakeFiles/Interpreter.dir/Token.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Token.cpp > CMakeFiles/Interpreter.dir/Token.cpp.i
 
 CMakeFiles/Interpreter.dir/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Token.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Token.cpp -o CMakeFiles/Interpreter.dir/Token.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Token.cpp -o CMakeFiles/Interpreter.dir/Token.cpp.s
 
 CMakeFiles/Interpreter.dir/Scanner.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Scanner.cpp.o: ../Scanner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Interpreter.dir/Scanner.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Scanner.cpp.o -c /home/wolf/Documents/Interpreter/Scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Interpreter.dir/Scanner.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Scanner.cpp.o -c /builds/project-0/Scanner.cpp
 
 CMakeFiles/Interpreter.dir/Scanner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Scanner.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Scanner.cpp > CMakeFiles/Interpreter.dir/Scanner.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Scanner.cpp > CMakeFiles/Interpreter.dir/Scanner.cpp.i
 
 CMakeFiles/Interpreter.dir/Scanner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Scanner.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Scanner.cpp -o CMakeFiles/Interpreter.dir/Scanner.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Scanner.cpp -o CMakeFiles/Interpreter.dir/Scanner.cpp.s
 
 CMakeFiles/Interpreter.dir/Printer.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Printer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Interpreter.dir/Printer.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Printer.cpp.o -c /home/wolf/Documents/Interpreter/Printer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Interpreter.dir/Printer.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Printer.cpp.o -c /builds/project-0/Printer.cpp
 
 CMakeFiles/Interpreter.dir/Printer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Printer.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Printer.cpp > CMakeFiles/Interpreter.dir/Printer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Printer.cpp > CMakeFiles/Interpreter.dir/Printer.cpp.i
 
 CMakeFiles/Interpreter.dir/Printer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Printer.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Printer.cpp -o CMakeFiles/Interpreter.dir/Printer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Printer.cpp -o CMakeFiles/Interpreter.dir/Printer.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: ../Expressions/Assign.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Assign.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o -c /builds/project-0/Expressions/Assign.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Assign.cpp > CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Assign.cpp > CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Assign.cpp -o CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Assign.cpp -o CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Expressions/Binary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Binary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o -c /builds/project-0/Expressions/Binary.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Binary.cpp > CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Binary.cpp > CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Binary.cpp -o CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Binary.cpp -o CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Expressions/Call.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Call.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o -c /builds/project-0/Expressions/Call.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Call.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Call.cpp > CMakeFiles/Interpreter.dir/Expressions/Call.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Call.cpp > CMakeFiles/Interpreter.dir/Expressions/Call.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Call.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Call.cpp -o CMakeFiles/Interpreter.dir/Expressions/Call.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Call.cpp -o CMakeFiles/Interpreter.dir/Expressions/Call.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Expressions/Get.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Get.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o -c /builds/project-0/Expressions/Get.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Get.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Get.cpp > CMakeFiles/Interpreter.dir/Expressions/Get.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Get.cpp > CMakeFiles/Interpreter.dir/Expressions/Get.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Get.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Get.cpp -o CMakeFiles/Interpreter.dir/Expressions/Get.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Get.cpp -o CMakeFiles/Interpreter.dir/Expressions/Get.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Expressions/Grouping.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Grouping.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o -c /builds/project-0/Expressions/Grouping.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Grouping.cpp > CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Grouping.cpp > CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Grouping.cpp -o CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Grouping.cpp -o CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Expressions/Literal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Literal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o -c /builds/project-0/Expressions/Literal.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Literal.cpp > CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Literal.cpp > CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Literal.cpp -o CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Literal.cpp -o CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Expressions/Logical.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Logical.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o -c /builds/project-0/Expressions/Logical.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Logical.cpp > CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Logical.cpp > CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Logical.cpp -o CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Logical.cpp -o CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Expressions/Set.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Set.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o -c /builds/project-0/Expressions/Set.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Set.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Set.cpp > CMakeFiles/Interpreter.dir/Expressions/Set.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Set.cpp > CMakeFiles/Interpreter.dir/Expressions/Set.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Set.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Set.cpp -o CMakeFiles/Interpreter.dir/Expressions/Set.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Set.cpp -o CMakeFiles/Interpreter.dir/Expressions/Set.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Expressions/Super.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Super.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o -c /builds/project-0/Expressions/Super.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Super.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Super.cpp > CMakeFiles/Interpreter.dir/Expressions/Super.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Super.cpp > CMakeFiles/Interpreter.dir/Expressions/Super.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Super.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Super.cpp -o CMakeFiles/Interpreter.dir/Expressions/Super.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Super.cpp -o CMakeFiles/Interpreter.dir/Expressions/Super.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Expressions/This.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/This.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/This.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/This.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/This.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/This.cpp.o -c /builds/project-0/Expressions/This.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/This.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/This.cpp > CMakeFiles/Interpreter.dir/Expressions/This.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/This.cpp > CMakeFiles/Interpreter.dir/Expressions/This.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/This.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/This.cpp -o CMakeFiles/Interpreter.dir/Expressions/This.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/This.cpp -o CMakeFiles/Interpreter.dir/Expressions/This.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Expressions/Unary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Unary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o -c /builds/project-0/Expressions/Unary.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Unary.cpp > CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Unary.cpp > CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Unary.cpp -o CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Unary.cpp -o CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.s
 
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: CMakeFiles/Interpreter.dir/flags.make
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Expressions/Variable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o -c /home/wolf/Documents/Interpreter/Expressions/Variable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o"
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o -c /builds/project-0/Expressions/Variable.cpp
 
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wolf/Documents/Interpreter/Expressions/Variable.cpp > CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /builds/project-0/Expressions/Variable.cpp > CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.i
 
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wolf/Documents/Interpreter/Expressions/Variable.cpp -o CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /builds/project-0/Expressions/Variable.cpp -o CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.s
 
 # Object files for target Interpreter
 Interpreter_OBJECTS = \
@@ -305,7 +305,7 @@ Interpreter: CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o
 Interpreter: CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o
 Interpreter: CMakeFiles/Interpreter.dir/build.make
 Interpreter: CMakeFiles/Interpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Interpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/builds/project-0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Interpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Interpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -318,6 +318,6 @@ CMakeFiles/Interpreter.dir/clean:
 .PHONY : CMakeFiles/Interpreter.dir/clean
 
 CMakeFiles/Interpreter.dir/depend:
-	cd /home/wolf/Documents/Interpreter/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wolf/Documents/Interpreter /home/wolf/Documents/Interpreter /home/wolf/Documents/Interpreter/cmake-build-debug /home/wolf/Documents/Interpreter/cmake-build-debug /home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir/DependInfo.cmake --color=$(COLOR)
+	cd /builds/project-0/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /builds/project-0 /builds/project-0 /builds/project-0/cmake-build-debug /builds/project-0/cmake-build-debug /builds/project-0/cmake-build-debug/CMakeFiles/Interpreter.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Interpreter.dir/depend
 

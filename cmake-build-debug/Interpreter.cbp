@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/wolf/Documents/Interpreter/cmake-build-debug"/>
+				<Option working_dir="/builds/project-0/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/wolf/Documents/Interpreter/cmake-build-debug"/>
+				<Option working_dir="/builds/project-0/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interpreter">
-				<Option output="/home/wolf/Documents/Interpreter/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wolf/Documents/Interpreter/cmake-build-debug"/>
+				<Option output="/builds/project-0/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/builds/project-0/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -43,15 +43,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Interpreter/fast">
-				<Option output="/home/wolf/Documents/Interpreter/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/wolf/Documents/Interpreter/cmake-build-debug"/>
+				<Option output="/builds/project-0/cmake-build-debug/Interpreter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/builds/project-0/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -65,126 +65,126 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 Interpreter/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/wolf/Documents/Interpreter/cmake-build-debug"/>
+				<Option working_dir="/builds/project-0/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/wolf/Documents/Interpreter/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/builds/project-0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/wolf/Documents/Interpreter/Enum.h">
+		<Unit filename="/builds/project-0/Enum.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expression.h">
+		<Unit filename="/builds/project-0/Expression.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Assign.cpp">
+		<Unit filename="/builds/project-0/Expressions/Assign.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Assign.h">
+		<Unit filename="/builds/project-0/Expressions/Assign.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Binary.cpp">
+		<Unit filename="/builds/project-0/Expressions/Binary.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Binary.h">
+		<Unit filename="/builds/project-0/Expressions/Binary.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Call.cpp">
+		<Unit filename="/builds/project-0/Expressions/Call.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Call.h">
+		<Unit filename="/builds/project-0/Expressions/Call.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Get.cpp">
+		<Unit filename="/builds/project-0/Expressions/Get.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Get.h">
+		<Unit filename="/builds/project-0/Expressions/Get.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Grouping.cpp">
+		<Unit filename="/builds/project-0/Expressions/Grouping.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Grouping.h">
+		<Unit filename="/builds/project-0/Expressions/Grouping.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Literal.cpp">
+		<Unit filename="/builds/project-0/Expressions/Literal.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Literal.h">
+		<Unit filename="/builds/project-0/Expressions/Literal.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Logical.cpp">
+		<Unit filename="/builds/project-0/Expressions/Logical.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Logical.h">
+		<Unit filename="/builds/project-0/Expressions/Logical.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Set.cpp">
+		<Unit filename="/builds/project-0/Expressions/Set.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Set.h">
+		<Unit filename="/builds/project-0/Expressions/Set.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Super.cpp">
+		<Unit filename="/builds/project-0/Expressions/Super.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Super.h">
+		<Unit filename="/builds/project-0/Expressions/Super.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/This.cpp">
+		<Unit filename="/builds/project-0/Expressions/This.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/This.h">
+		<Unit filename="/builds/project-0/Expressions/This.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Unary.cpp">
+		<Unit filename="/builds/project-0/Expressions/Unary.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Unary.h">
+		<Unit filename="/builds/project-0/Expressions/Unary.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Variable.cpp">
+		<Unit filename="/builds/project-0/Expressions/Variable.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Expressions/Variable.h">
+		<Unit filename="/builds/project-0/Expressions/Variable.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Main.cpp">
+		<Unit filename="/builds/project-0/Main.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Printer.cpp">
+		<Unit filename="/builds/project-0/Printer.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Printer.h">
+		<Unit filename="/builds/project-0/Printer.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Scanner.cpp">
+		<Unit filename="/builds/project-0/Scanner.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Scanner.h">
+		<Unit filename="/builds/project-0/Scanner.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Token.cpp">
+		<Unit filename="/builds/project-0/Token.cpp">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Token.h">
+		<Unit filename="/builds/project-0/Token.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Utils.h">
+		<Unit filename="/builds/project-0/Utils.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/CMakeLists.txt">
+		<Unit filename="/builds/project-0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

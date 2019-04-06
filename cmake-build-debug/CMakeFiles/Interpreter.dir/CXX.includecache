@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wolf/Documents/Interpreter/Enum.h
+/builds/project-0/Enum.h
 cstddef
 -
 cstring
@@ -16,169 +16,169 @@ iosfwd
 stdexcept
 -
 
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 Utils.h
-/home/wolf/Documents/Interpreter/Utils.h
+/builds/project-0/Utils.h
 Token.h
-/home/wolf/Documents/Interpreter/Token.h
+/builds/project-0/Token.h
 
-/home/wolf/Documents/Interpreter/Expressions/Assign.cpp
+/builds/project-0/Expressions/Assign.cpp
 Assign.h
-/home/wolf/Documents/Interpreter/Expressions/Assign.h
+/builds/project-0/Expressions/Assign.h
 
-/home/wolf/Documents/Interpreter/Expressions/Assign.h
+/builds/project-0/Expressions/Assign.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Binary.cpp
+/builds/project-0/Expressions/Binary.cpp
 Binary.h
-/home/wolf/Documents/Interpreter/Expressions/Binary.h
+/builds/project-0/Expressions/Binary.h
 
-/home/wolf/Documents/Interpreter/Expressions/Binary.h
+/builds/project-0/Expressions/Binary.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Call.cpp
+/builds/project-0/Expressions/Call.cpp
 Call.h
-/home/wolf/Documents/Interpreter/Expressions/Call.h
+/builds/project-0/Expressions/Call.h
 
-/home/wolf/Documents/Interpreter/Expressions/Call.h
+/builds/project-0/Expressions/Call.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Get.cpp
+/builds/project-0/Expressions/Get.cpp
 Get.h
-/home/wolf/Documents/Interpreter/Expressions/Get.h
+/builds/project-0/Expressions/Get.h
 
-/home/wolf/Documents/Interpreter/Expressions/Get.h
+/builds/project-0/Expressions/Get.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Grouping.cpp
+/builds/project-0/Expressions/Grouping.cpp
 Grouping.h
-/home/wolf/Documents/Interpreter/Expressions/Grouping.h
+/builds/project-0/Expressions/Grouping.h
 
-/home/wolf/Documents/Interpreter/Expressions/Grouping.h
+/builds/project-0/Expressions/Grouping.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Literal.cpp
+/builds/project-0/Expressions/Literal.cpp
 Literal.h
-/home/wolf/Documents/Interpreter/Expressions/Literal.h
+/builds/project-0/Expressions/Literal.h
 
-/home/wolf/Documents/Interpreter/Expressions/Literal.h
+/builds/project-0/Expressions/Literal.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Logical.cpp
+/builds/project-0/Expressions/Logical.cpp
 Logical.h
-/home/wolf/Documents/Interpreter/Expressions/Logical.h
+/builds/project-0/Expressions/Logical.h
 
-/home/wolf/Documents/Interpreter/Expressions/Logical.h
+/builds/project-0/Expressions/Logical.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Set.cpp
+/builds/project-0/Expressions/Set.cpp
 Set.h
-/home/wolf/Documents/Interpreter/Expressions/Set.h
+/builds/project-0/Expressions/Set.h
 
-/home/wolf/Documents/Interpreter/Expressions/Set.h
+/builds/project-0/Expressions/Set.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Super.cpp
+/builds/project-0/Expressions/Super.cpp
 Super.h
-/home/wolf/Documents/Interpreter/Expressions/Super.h
+/builds/project-0/Expressions/Super.h
 
-/home/wolf/Documents/Interpreter/Expressions/Super.h
+/builds/project-0/Expressions/Super.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/This.cpp
+/builds/project-0/Expressions/This.cpp
 This.h
-/home/wolf/Documents/Interpreter/Expressions/This.h
+/builds/project-0/Expressions/This.h
 
-/home/wolf/Documents/Interpreter/Expressions/This.h
+/builds/project-0/Expressions/This.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Unary.cpp
+/builds/project-0/Expressions/Unary.cpp
 Unary.h
-/home/wolf/Documents/Interpreter/Expressions/Unary.h
+/builds/project-0/Expressions/Unary.h
 
-/home/wolf/Documents/Interpreter/Expressions/Unary.h
+/builds/project-0/Expressions/Unary.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Expressions/Variable.cpp
+/builds/project-0/Expressions/Variable.cpp
 Variable.h
-/home/wolf/Documents/Interpreter/Expressions/Variable.h
+/builds/project-0/Expressions/Variable.h
 
-/home/wolf/Documents/Interpreter/Expressions/Variable.h
+/builds/project-0/Expressions/Variable.h
 ../Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Main.cpp
+/builds/project-0/Main.cpp
 Scanner.h
-/home/wolf/Documents/Interpreter/Scanner.h
+/builds/project-0/Scanner.h
 Token.h
-/home/wolf/Documents/Interpreter/Token.h
+/builds/project-0/Token.h
 Printer.h
-/home/wolf/Documents/Interpreter/Printer.h
+/builds/project-0/Printer.h
 Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 
-/home/wolf/Documents/Interpreter/Printer.cpp
+/builds/project-0/Printer.cpp
 Printer.h
-/home/wolf/Documents/Interpreter/Printer.h
+/builds/project-0/Printer.h
 
-/home/wolf/Documents/Interpreter/Printer.h
+/builds/project-0/Printer.h
 Expression.h
-/home/wolf/Documents/Interpreter/Expression.h
+/builds/project-0/Expression.h
 Expressions/Assign.h
-/home/wolf/Documents/Interpreter/Expressions/Assign.h
+/builds/project-0/Expressions/Assign.h
 Expressions/Binary.h
-/home/wolf/Documents/Interpreter/Expressions/Binary.h
+/builds/project-0/Expressions/Binary.h
 Expressions/Call.h
-/home/wolf/Documents/Interpreter/Expressions/Call.h
+/builds/project-0/Expressions/Call.h
 Expressions/Get.h
-/home/wolf/Documents/Interpreter/Expressions/Get.h
+/builds/project-0/Expressions/Get.h
 Expressions/Grouping.h
-/home/wolf/Documents/Interpreter/Expressions/Grouping.h
+/builds/project-0/Expressions/Grouping.h
 Expressions/Literal.h
-/home/wolf/Documents/Interpreter/Expressions/Literal.h
+/builds/project-0/Expressions/Literal.h
 Expressions/Logical.h
-/home/wolf/Documents/Interpreter/Expressions/Logical.h
+/builds/project-0/Expressions/Logical.h
 Expressions/Set.h
-/home/wolf/Documents/Interpreter/Expressions/Set.h
+/builds/project-0/Expressions/Set.h
 Expressions/Super.h
-/home/wolf/Documents/Interpreter/Expressions/Super.h
+/builds/project-0/Expressions/Super.h
 Expressions/This.h
-/home/wolf/Documents/Interpreter/Expressions/This.h
+/builds/project-0/Expressions/This.h
 Expressions/Unary.h
-/home/wolf/Documents/Interpreter/Expressions/Unary.h
+/builds/project-0/Expressions/Unary.h
 Expressions/Variable.h
-/home/wolf/Documents/Interpreter/Expressions/Variable.h
+/builds/project-0/Expressions/Variable.h
 
-/home/wolf/Documents/Interpreter/Scanner.cpp
+/builds/project-0/Scanner.cpp
 Scanner.h
-/home/wolf/Documents/Interpreter/Scanner.h
+/builds/project-0/Scanner.h
 
-/home/wolf/Documents/Interpreter/Scanner.h
+/builds/project-0/Scanner.h
 Utils.h
-/home/wolf/Documents/Interpreter/Utils.h
+/builds/project-0/Utils.h
 Token.h
-/home/wolf/Documents/Interpreter/Token.h
+/builds/project-0/Token.h
 
-/home/wolf/Documents/Interpreter/Token.cpp
+/builds/project-0/Token.cpp
 Token.h
-/home/wolf/Documents/Interpreter/Token.h
+/builds/project-0/Token.h
 
-/home/wolf/Documents/Interpreter/Token.h
+/builds/project-0/Token.h
 Utils.h
-/home/wolf/Documents/Interpreter/Utils.h
+/builds/project-0/Utils.h
 
-/home/wolf/Documents/Interpreter/Utils.h
+/builds/project-0/Utils.h
 iostream
 -
 fstream
@@ -192,5 +192,5 @@ map
 utility
 -
 Enum.h
-/home/wolf/Documents/Interpreter/Enum.h
+/builds/project-0/Enum.h
 
