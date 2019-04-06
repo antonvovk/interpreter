@@ -184,9 +184,6 @@
 		<Unit filename="/home/wolf/Documents/Interpreter/Utils.h">
 			<Option target="Interpreter"/>
 		</Unit>
-		<Unit filename="/home/wolf/Documents/Interpreter/Visitor.h">
-			<Option target="Interpreter"/>
-		</Unit>
 		<Unit filename="/home/wolf/Documents/Interpreter/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

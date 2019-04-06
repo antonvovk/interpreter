@@ -15,83 +15,28 @@
 #include "Expressions/Unary.h"
 #include "Expressions/Variable.h"
 
-class Printer : public Visitor {
+interface IPrinter {
 public:
-    String print(Expression *expr) {
-        return expr->accept(*this);
-    }
+    virtual String print(Expression *expr) = 0;
+};
 
-    String visit(Assign &expr) override {
-        return "";
-    }
-
-    String visit(Binary &expr) override {
-        Array<Expression*> exprs;
-        exprs.push_back(expr.Left());
-        exprs.push_back(expr.Right());
-        return parenthesize(expr.Operatr().Lexeme(), exprs);
-    }
-
-    String visit(Call &expr) override {
-        return "";
-    }
-
-    String visit(Get &expr) override {
-        return "";
-    }
-
-    String visit(Grouping &expr) override {
-        Array<Expression*> exprs;
-        exprs.push_back(expr.Expr());
-        return parenthesize("group", exprs);
-    }
-
-    String visit(Literal &expr) override {
-        if (expr.Value().empty()) {
-            return "nil";
-        }
-
-        return expr.Value();
-    }
-
-    String visit(Logical &expr) override {
-        return "";
-    }
-
-    String visit(Set &expr) override {
-        return "";
-    }
-
-    String visit(Super &expr) override {
-        return "";
-    }
-
-    String visit(This &expr) override {
-        return "";
-    }
-
-    String visit(Unary &expr) override {
-        Array<Expression*> exprs;
-        exprs.push_back(expr.Right());
-        return parenthesize(expr.Operatr().Lexeme(), exprs);
-    }
-
-    String visit(Variable &expr) override {
-        return "";
-    }
-
-    String parenthesize(const String& name, Array<Expression*> exprs) {
-        String builder;
-
-        builder.append("(").append(name);
-        for (Expression* expr : exprs) {
-            builder.append(" ");
-            builder.append(expr->accept(*this));
-        }
-        builder.append(")");
-
-        return builder;
-    }
+class Printer : public Expression::Visitor, public IPrinter {
+public:
+    String print(Expression *expr) override;
+private:
+    String visit(Assign &expr) override;
+    String visit(Binary &expr) override;
+    String visit(Call &expr) override;
+    String visit(Get &expr) override;
+    String visit(Grouping &expr) override;
+    String visit(Literal &expr) override;
+    String visit(Logical &expr) override;
+    String visit(Set &expr) override;
+    String visit(Super &expr) override;
+    String visit(This &expr) override;
+    String visit(Unary &expr) override;
+    String visit(Variable &expr) override;
+    String parenthesize(const String& name, const Array<Expression*>& exprs);
 };
 
 #endif

@@ -21,52 +21,98 @@ Utils.h
 /home/wolf/Documents/Interpreter/Utils.h
 Token.h
 /home/wolf/Documents/Interpreter/Token.h
-Visitor.h
-/home/wolf/Documents/Interpreter/Visitor.h
+
+/home/wolf/Documents/Interpreter/Expressions/Assign.cpp
+Assign.h
+/home/wolf/Documents/Interpreter/Expressions/Assign.h
 
 /home/wolf/Documents/Interpreter/Expressions/Assign.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
 
+/home/wolf/Documents/Interpreter/Expressions/Binary.cpp
+Binary.h
+/home/wolf/Documents/Interpreter/Expressions/Binary.h
+
 /home/wolf/Documents/Interpreter/Expressions/Binary.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
+
+/home/wolf/Documents/Interpreter/Expressions/Call.cpp
+Call.h
+/home/wolf/Documents/Interpreter/Expressions/Call.h
 
 /home/wolf/Documents/Interpreter/Expressions/Call.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
 
+/home/wolf/Documents/Interpreter/Expressions/Get.cpp
+Get.h
+/home/wolf/Documents/Interpreter/Expressions/Get.h
+
 /home/wolf/Documents/Interpreter/Expressions/Get.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
+
+/home/wolf/Documents/Interpreter/Expressions/Grouping.cpp
+Grouping.h
+/home/wolf/Documents/Interpreter/Expressions/Grouping.h
 
 /home/wolf/Documents/Interpreter/Expressions/Grouping.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
 
+/home/wolf/Documents/Interpreter/Expressions/Literal.cpp
+Literal.h
+/home/wolf/Documents/Interpreter/Expressions/Literal.h
+
 /home/wolf/Documents/Interpreter/Expressions/Literal.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
+
+/home/wolf/Documents/Interpreter/Expressions/Logical.cpp
+Logical.h
+/home/wolf/Documents/Interpreter/Expressions/Logical.h
 
 /home/wolf/Documents/Interpreter/Expressions/Logical.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
 
+/home/wolf/Documents/Interpreter/Expressions/Set.cpp
+Set.h
+/home/wolf/Documents/Interpreter/Expressions/Set.h
+
 /home/wolf/Documents/Interpreter/Expressions/Set.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
+
+/home/wolf/Documents/Interpreter/Expressions/Super.cpp
+Super.h
+/home/wolf/Documents/Interpreter/Expressions/Super.h
 
 /home/wolf/Documents/Interpreter/Expressions/Super.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
 
+/home/wolf/Documents/Interpreter/Expressions/This.cpp
+This.h
+/home/wolf/Documents/Interpreter/Expressions/This.h
+
 /home/wolf/Documents/Interpreter/Expressions/This.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
 
+/home/wolf/Documents/Interpreter/Expressions/Unary.cpp
+Unary.h
+/home/wolf/Documents/Interpreter/Expressions/Unary.h
+
 /home/wolf/Documents/Interpreter/Expressions/Unary.h
 ../Expression.h
 /home/wolf/Documents/Interpreter/Expression.h
+
+/home/wolf/Documents/Interpreter/Expressions/Variable.cpp
+Variable.h
+/home/wolf/Documents/Interpreter/Expressions/Variable.h
 
 /home/wolf/Documents/Interpreter/Expressions/Variable.h
 ../Expression.h
@@ -139,8 +185,4 @@ utility
 -
 Enum.h
 /home/wolf/Documents/Interpreter/Enum.h
-
-/home/wolf/Documents/Interpreter/Visitor.h
-Utils.h
-/home/wolf/Documents/Interpreter/Utils.h
 

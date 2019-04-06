@@ -8,7 +8,6 @@ CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Assign.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -16,7 +15,6 @@ CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Binary.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -24,7 +22,6 @@ CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Call.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -32,7 +29,6 @@ CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Get.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -40,7 +36,6 @@ CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Grouping.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -48,7 +43,6 @@ CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Literal.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -56,7 +50,6 @@ CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Logical.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -64,7 +57,6 @@ CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Set.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -72,7 +64,6 @@ CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Super.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -80,7 +71,6 @@ CMakeFiles/Interpreter.dir/Expressions/This.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/This.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -88,7 +78,6 @@ CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Unary.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -96,7 +85,6 @@ CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o
  /home/wolf/Documents/Interpreter/Expressions/Variable.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Main.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -117,7 +105,6 @@ CMakeFiles/Interpreter.dir/Main.cpp.o
  /home/wolf/Documents/Interpreter/Scanner.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Printer.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Expression.h
@@ -137,7 +124,6 @@ CMakeFiles/Interpreter.dir/Printer.cpp.o
  /home/wolf/Documents/Interpreter/Printer.h
  /home/wolf/Documents/Interpreter/Token.h
  /home/wolf/Documents/Interpreter/Utils.h
- /home/wolf/Documents/Interpreter/Visitor.h
 CMakeFiles/Interpreter.dir/Scanner.cpp.o
  /home/wolf/Documents/Interpreter/Enum.h
  /home/wolf/Documents/Interpreter/Scanner.cpp

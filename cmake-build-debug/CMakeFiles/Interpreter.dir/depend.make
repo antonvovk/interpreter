@@ -7,7 +7,6 @@ CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: ../Expressions/Assign.cpp
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: ../Expressions/Assign.h
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Assign.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Expression.h
@@ -15,7 +14,6 @@ CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Expressions/Binary.cpp
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Expressions/Binary.h
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Binary.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Expression.h
@@ -23,7 +21,6 @@ CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Expressions/Call.cpp
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Expressions/Call.h
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Call.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Expression.h
@@ -31,7 +28,6 @@ CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Expressions/Get.cpp
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Expressions/Get.h
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Get.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Expression.h
@@ -39,7 +35,6 @@ CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Expressions/Grouping.c
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Expressions/Grouping.h
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Grouping.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Expression.h
@@ -47,7 +42,6 @@ CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Expressions/Literal.cpp
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Expressions/Literal.h
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Literal.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Expression.h
@@ -55,7 +49,6 @@ CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Expressions/Logical.cpp
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Expressions/Logical.h
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Logical.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Expression.h
@@ -63,7 +56,6 @@ CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Expressions/Set.cpp
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Expressions/Set.h
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Set.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Expression.h
@@ -71,7 +63,6 @@ CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Expressions/Super.cpp
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Expressions/Super.h
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Super.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Expression.h
@@ -79,7 +70,6 @@ CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Expressions/This.cpp
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Expressions/This.h
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/This.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Expression.h
@@ -87,7 +77,6 @@ CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Expressions/Unary.cpp
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Expressions/Unary.h
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Unary.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Expression.h
@@ -95,7 +84,6 @@ CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Expressions/Variable.c
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Expressions/Variable.h
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Expressions/Variable.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Main.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Main.cpp.o: ../Expression.h
@@ -116,7 +104,6 @@ CMakeFiles/Interpreter.dir/Main.cpp.o: ../Printer.h
 CMakeFiles/Interpreter.dir/Main.cpp.o: ../Scanner.h
 CMakeFiles/Interpreter.dir/Main.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Main.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Main.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Expression.h
@@ -136,7 +123,6 @@ CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Printer.cpp
 CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Printer.h
 CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Token.h
 CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Utils.h
-CMakeFiles/Interpreter.dir/Printer.cpp.o: ../Visitor.h
 
 CMakeFiles/Interpreter.dir/Scanner.cpp.o: ../Enum.h
 CMakeFiles/Interpreter.dir/Scanner.cpp.o: ../Scanner.cpp

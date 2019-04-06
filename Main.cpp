@@ -13,7 +13,7 @@ void tokenize(const String& line) {
 }
 
 int main() {
-    /*String line;
+    String line;
     File file("Test.txt");
 
     if (file.is_open()) {
@@ -25,11 +25,10 @@ int main() {
     }
     else {
         std::cout << "Unable to open file!" << '\n';
-    }*/
+    }
 
 
-    Expression *expression = new Binary(
-    new Unary(*new Token(TokenType::MINUS, "-", "", 1), new Literal("123")), *new Token(TokenType::STAR, "*", "", 1), new Grouping(new Literal("45.67")));
+    Expression *expression = new Binary(new Unary(*new Token(TokenType::MINUS, "-", "", 1), new Literal("123")), *new Token(TokenType::STAR, "*", "", 1), new Grouping(new Literal("45.67")));
 
     Printer printer;
     std::cout << printer.print(expression);
