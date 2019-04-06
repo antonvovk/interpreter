@@ -1,1 +1,5 @@
-cmake --build cmake-build-debug --target Interpreter -- -j 2
+build:
+  stage: build
+
+  script: 
+    - cmake --build cmake-build-debug --target Interpreter -- -j 2
