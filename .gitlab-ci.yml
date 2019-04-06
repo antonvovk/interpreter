@@ -2,6 +2,5 @@ image: node:latest
 
 build:
   script:
-    - apt -y update && apt -y install cmake make gcc
-    - cd cmake-build-debug
+    - apt update && apt -y install cmake make gcc
     - /usr/bin/cmake --build /builds/project-0/cmake-build-debug --target Interpreter -- -j 4
