@@ -1,3 +1,0 @@
-/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/Interpreter.dir
-/home/wolf/Documents/Interpreter/cmake-build-debug/CMakeFiles/edit_cache.dir
