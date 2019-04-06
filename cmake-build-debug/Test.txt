@@ -1,7 +1,0 @@
-var x = "Test";
-
-var number = 120;
-
-if (x > 100) {
-    print("Yes");
-}
