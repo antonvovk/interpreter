@@ -3,4 +3,6 @@ image: node:latest
 build:
     script:
         - apt-get -y update && apt -y install cmake make gcc
-        - /usr/bin/cmake --build /builds/antonvovk/interpreter/cmake-build-debug --target Interpreter -- -j 4
+        - cmake CMakeLists.txt
+        - cd cmake-build-debug/
+        - make
