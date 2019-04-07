@@ -36,7 +36,7 @@ private:
     String visit(This &expr) override;
     String visit(Unary &expr) override;
     String visit(Variable &expr) override;
-    String parenthesize(const String& name, const Array<Expression*>& exprs);
+    String parenthesize(const String& name, std::initializer_list<Expression*> exprs);
 };
 
 #endif

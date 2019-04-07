@@ -40,4 +40,4 @@ add_executable(interpreter
         Scanner.h
         Token.cpp
         Token.h
-        Utils.h)
+        Utils.h Parser.cpp Parser.h ParseError.h)

@@ -9,10 +9,7 @@ String Printer::visit(Assign &expr) {
 }
 
 String Printer::visit(Binary &expr) {
-    Array<Expression*> exprs;
-    exprs.push_back(expr.Left());
-    exprs.push_back(expr.Right());
-    return parenthesize(expr.Operatr().Lexeme(), exprs);
+    return parenthesize(expr.Operatr().Lexeme(), {expr.Left(), expr.Right()});
 }
 
 String Printer::visit(Call &expr) {
@@ -24,9 +21,7 @@ String Printer::visit(Get &expr) {
 }
 
 String Printer::visit(Grouping &expr) {
-    Array<Expression*> exprs;
-    exprs.push_back(expr.Expr());
-    return parenthesize("group", exprs);
+    return parenthesize("group", {expr.Expr()});
 }
 
 String Printer::visit(Literal &expr) {
@@ -54,16 +49,14 @@ String Printer::visit(This &expr) {
 }
 
 String Printer::visit(Unary &expr) {
-    Array<Expression*> exprs;
-    exprs.push_back(expr.Right());
-    return parenthesize(expr.Operatr().Lexeme(), exprs);
+    return parenthesize(expr.Operatr().Lexeme(), {expr.Right()});
 }
 
 String Printer::visit(Variable &expr) {
     return "";
 }
 
-String Printer::parenthesize(const String& name, const Array<Expression*>& exprs) {
+String Printer::parenthesize(const String& name, std::initializer_list<Expression*> exprs) {
     String builder;
     builder.append("(").append(name);
 

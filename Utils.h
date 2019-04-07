@@ -7,6 +7,9 @@
 #include <vector>
 #include <map>
 #include <utility>
+#include <cstdarg>
+#include <initializer_list>
+#include <exception>
 #include "Enum.h"
 
 #define interface class
@@ -14,6 +17,7 @@
 
 using String = std::string;
 using File = std::ifstream;
+using Exception = std::exception;
 template <typename T> using Array = std::vector<T>;
 template <typename K, typename V> using Map = std::map<K, V>;
 template <typename K, typename V> using Pair = std::pair<K, V>;
