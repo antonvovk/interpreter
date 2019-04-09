@@ -2,6 +2,7 @@ image: node:latest
 
 build:
     script:
+        - lsb_release -a
         - apt-get -y update && apt -y install cmake make gcc
         - cmake CMakeLists.txt
         - make
