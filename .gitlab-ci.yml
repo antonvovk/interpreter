@@ -2,6 +2,6 @@ image: ubuntu:latest
 
 build:
     script:
-        - apt-get -y update && apt -y install cmake make gcc
+        - apt-get -y update && apt -y install cmake make gcc g++ build-essential
         - cmake CMakeLists.txt
         - make
