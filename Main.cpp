@@ -22,7 +22,7 @@ void test(const String &line) {
     Printer printer;
     std::cout << printer.print(expression) << '\n';
 
-    Expression *expression2 = new Binary(new Unary(*new Token(TokenType::MINUS, "-", "", 1), new Literal("123")), *new Token(TokenType::STAR, "*", "", 1), new Grouping(new Literal("45.67")));
+    Expression *expression2 = new Binary(new Unary(*new Token(TokenType::MINUS, String("-"), String(""), 1), new Literal(String("123"))), *new Token(TokenType::STAR, String("*"), String(""), 1), new Grouping(new Literal(String("45.67"))));
 
     std::cout << printer.print(expression2);
 }

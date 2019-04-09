@@ -4,7 +4,7 @@ Unary::Unary(Token operatr, Expression* right) : operatr(std::move(operatr)), ri
 
 }
 
-String Unary::accept(Visitor &visitor) {
+Object Unary::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

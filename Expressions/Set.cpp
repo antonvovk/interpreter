@@ -4,11 +4,11 @@ Set::Set(Expression* object, Token name, Expression* value) : object(object), na
 
 }
 
-String Set::accept(Visitor &visitor) {
+Object Set::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 
-Expression* Set::Object() const {
+Expression* Set::Obj() const {
     return this->object;
 }
 

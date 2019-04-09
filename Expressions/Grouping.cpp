@@ -4,7 +4,7 @@ Grouping::Grouping(Expression* expr) : expr(expr) {
 
 }
 
-String Grouping::accept(Visitor &visitor) {
+Object Grouping::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

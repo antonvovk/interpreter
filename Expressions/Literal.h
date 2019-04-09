@@ -5,16 +5,16 @@
 
 interface ILiteral {
 public:
-    virtual String Value() const = 0;
+    virtual Object Value() const = 0;
 };
 
 class Literal : public Expression, public ILiteral {
 public:
-    explicit Literal(String value);
-    String accept(Visitor &visitor) override;
-    String Value() const override;
+    explicit Literal(Object value);
+    Object accept(Visitor &visitor) override;
+    Object Value() const override;
 private:
-    String value;
+    Object value;
 };
 
 #endif

@@ -13,7 +13,7 @@ public:
 class Call : public Expression, public ICall {
 public:
     explicit Call(Expression* callee, Token paren, Array<Expression*> arguments);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Expression* Callee() const override;
     Token Paren() const override;
     Array<Expression*> Arguments() const override;

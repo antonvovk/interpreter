@@ -4,7 +4,7 @@ Binary::Binary(Expression* left, Token operatr, Expression* right) : left(left),
 
 }
 
-String Binary::accept(Visitor &visitor) {
+Object Binary::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

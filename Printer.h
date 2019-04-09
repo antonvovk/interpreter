@@ -24,18 +24,18 @@ class Printer : public Expression::Visitor, public IPrinter {
 public:
     String print(Expression *expr) override;
 private:
-    String visit(Assign &expr) override;
-    String visit(Binary &expr) override;
-    String visit(Call &expr) override;
-    String visit(Get &expr) override;
-    String visit(Grouping &expr) override;
-    String visit(Literal &expr) override;
-    String visit(Logical &expr) override;
-    String visit(Set &expr) override;
-    String visit(Super &expr) override;
-    String visit(This &expr) override;
-    String visit(Unary &expr) override;
-    String visit(Variable &expr) override;
+    Object visit(Assign &expr) override;
+    Object visit(Binary &expr) override;
+    Object visit(Call &expr) override;
+    Object visit(Get &expr) override;
+    Object visit(Grouping &expr) override;
+    Object visit(Literal &expr) override;
+    Object visit(Logical &expr) override;
+    Object visit(Set &expr) override;
+    Object visit(Super &expr) override;
+    Object visit(This &expr) override;
+    Object visit(Unary &expr) override;
+    Object visit(Variable &expr) override;
     String parenthesize(const String& name, std::initializer_list<Expression*> exprs);
 };
 

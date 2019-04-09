@@ -4,11 +4,11 @@ Get::Get(Expression* object, Token name) : object(object), name(std::move(name))
 
 }
 
-String Get::accept(Visitor &visitor) {
+Object Get::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 
-Expression* Get::Object() const {
+Expression* Get::Obj() const {
     return this->object;
 }
 

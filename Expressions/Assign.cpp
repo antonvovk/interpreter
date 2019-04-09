@@ -4,7 +4,7 @@ Assign::Assign(Token name, Expression* value) : name(std::move(name)), value(val
 
 }
 
-String Assign::accept(Visitor &visitor) {
+Object Assign::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

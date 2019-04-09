@@ -4,7 +4,7 @@ Call::Call(Expression* callee, Token paren, Array<Expression*> arguments) : call
 
 }
 
-String Call::accept(Visitor &visitor) {
+Object Call::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

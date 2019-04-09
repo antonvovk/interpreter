@@ -11,7 +11,7 @@ public:
 class This : public Expression, public IThis {
 public:
     explicit This(Token keyword);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Token Keyword() const override;
 private:
     Token keyword;

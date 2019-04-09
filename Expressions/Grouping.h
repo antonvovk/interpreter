@@ -11,7 +11,7 @@ public:
 class Grouping : public Expression, public IGrouping {
 public:
     explicit Grouping(Expression* expression);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Expression* Expr() const override;
 private:
     Expression* expr;

@@ -13,7 +13,7 @@ public:
 class Binary : public Expression, public IBinary {
 public:
     explicit Binary(Expression* left, Token operatr, Expression* right);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Expression* Left() const override;
     Token Operatr() const override;
     Expression* Right() const override;

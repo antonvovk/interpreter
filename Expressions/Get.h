@@ -5,15 +5,15 @@
 
 interface IGet {
 public:
-    virtual Expression* Object() const = 0;
+    virtual Expression* Obj() const = 0;
     virtual Token Name() const = 0;
 };
 
 class Get : public Expression, public IGet {
 public:
     explicit Get(Expression* object, Token name);
-    String accept(Visitor &visitor) override;
-    Expression* Object() const override;
+    Object accept(Visitor &visitor) override;
+    Expression* Obj() const override;
     Token Name() const override;
 private:
     Expression* object;

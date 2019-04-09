@@ -4,7 +4,7 @@ This::This(Token keyword) : keyword(std::move(keyword)) {
 
 }
 
-String This::accept(Visitor &visitor) {
+Object This::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

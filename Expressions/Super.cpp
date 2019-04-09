@@ -4,7 +4,7 @@ Super::Super(Token keyword, Token method) : keyword(std::move(keyword)), method(
 
 }
 
-String Super::accept(Visitor &visitor) {
+Object Super::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

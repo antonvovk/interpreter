@@ -5,7 +5,7 @@
 
 interface ISet {
 public:
-    virtual Expression* Object() const = 0;
+    virtual Expression* Obj() const = 0;
     virtual Token Name() const = 0;
     virtual Expression* Value() const = 0;
 };
@@ -13,8 +13,8 @@ public:
 class Set : public Expression, public ISet {
 public:
     explicit Set(Expression* object, Token name, Expression* value);
-    String accept(Visitor &visitor) override;
-    Expression* Object() const override;
+    Object accept(Visitor &visitor) override;
+    Expression* Obj() const override;
     Token Name() const override;
     Expression* Value() const override;
 private:

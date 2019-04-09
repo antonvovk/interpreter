@@ -4,7 +4,7 @@ Variable::Variable(Token name) : name(std::move(name)) {
 
 }
 
-String Variable::accept(Visitor &visitor) {
+Object Variable::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 

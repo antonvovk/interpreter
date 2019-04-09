@@ -12,7 +12,7 @@ public:
 class Unary : public Expression, public IUnary {
 public:
     explicit Unary(Token operatr, Expression* right);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Token Operatr() const override;
     Expression* Right() const override;
 private:

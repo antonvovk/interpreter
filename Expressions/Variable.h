@@ -11,7 +11,7 @@ public:
 class Variable : public Expression, public IVariable {
 public:
     explicit Variable(Token name);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Token Name() const override;
 private:
     Token name;

@@ -12,7 +12,7 @@ public:
 class Assign : public Expression, public IAssign {
 public:
     explicit Assign(Token name, Expression* value);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Token Name() const override;
     Expression* Value() const override;
 private:

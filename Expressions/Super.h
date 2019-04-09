@@ -12,7 +12,7 @@ public:
 class Super : public Expression, public ISuper {
 public:
     explicit Super(Token keyword, Token method);
-    String accept(Visitor &visitor) override;
+    Object accept(Visitor &visitor) override;
     Token Keyword() const override;
     Token Method() const override;
 private:

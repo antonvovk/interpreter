@@ -4,7 +4,7 @@ Logical::Logical(Expression* left, Token operatr, Expression* right) : left(left
 
 }
 
-String Logical::accept(Visitor &visitor) {
+Object Logical::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 
