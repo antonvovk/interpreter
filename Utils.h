@@ -10,11 +10,13 @@
 #include <cstdarg>
 #include <initializer_list>
 #include <exception>
+#include <any>
 #include "Enum.h"
 
 #define interface class
 #define abstract
 
+using Object = std::any;
 using String = std::string;
 using File = std::ifstream;
 using Exception = std::exception;
