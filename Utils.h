@@ -11,6 +11,7 @@
 #include <initializer_list>
 #include <exception>
 #include <any>
+#include <memory>
 #include "Enum.h"
 
 #define interface class
@@ -23,5 +24,7 @@ using Exception = std::exception;
 template <typename T> using Array = std::vector<T>;
 template <typename K, typename V> using Map = std::map<K, V>;
 template <typename K, typename V> using Pair = std::pair<K, V>;
+
+String objectToString(const Object& any);
 
 #endif

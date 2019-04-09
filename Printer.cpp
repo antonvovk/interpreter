@@ -1,11 +1,11 @@
 #include "Printer.h"
 
-String Printer::print(Expression *expr) {
-    return std::any_cast<String>(expr->accept(*this));
+String Printer::print(std::shared_ptr<Expression> expr) {
+    return objectToString(expr->accept(*this));
 }
 
 Object Printer::visit(Assign &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(Binary &expr) {
@@ -13,11 +13,11 @@ Object Printer::visit(Binary &expr) {
 }
 
 Object Printer::visit(Call &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(Get &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(Grouping &expr) {
@@ -25,27 +25,23 @@ Object Printer::visit(Grouping &expr) {
 }
 
 Object Printer::visit(Literal &expr) {
-    if (std::any_cast<String>(expr.Value()).empty()) {
-        return "nil";
-    }
-
     return expr.Value();
 }
 
 Object Printer::visit(Logical &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(Set &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(Super &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(This &expr) {
-    return "";
+    return String("");
 }
 
 Object Printer::visit(Unary &expr) {
@@ -53,16 +49,16 @@ Object Printer::visit(Unary &expr) {
 }
 
 Object Printer::visit(Variable &expr) {
-    return "";
+    return String("");
 }
 
-String Printer::parenthesize(const String& name, std::initializer_list<Expression*> exprs) {
+String Printer::parenthesize(const String& name, std::initializer_list<std::shared_ptr<Expression>> exprs) {
     String builder;
     builder.append("(").append(name);
 
-    for (Expression* expr : exprs) {
+    for (const std::shared_ptr<Expression>& expr : exprs) {
         builder.append(" ");
-        builder.append(std::any_cast<String>(expr->accept(*this)));
+        builder.append(objectToString(expr->accept(*this)));
     }
 
     builder.append(")");

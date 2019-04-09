@@ -1,1 +1,6 @@
-Added Expression with Visitor pattern and Printer
+April 7 2019
+    - Added Expression with Visitor pattern and Printer
+
+April 9 2019
+    - Added Interpreter and Object which is main type in Expressions, Printer, and Interpreter
+    - Changed all pointers to smart pointers

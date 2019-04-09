@@ -18,27 +18,27 @@
 
 interface IParser {
 public:
-    virtual Expression* parse() = 0;
+    virtual std::shared_ptr<Expression> parse() = 0;
 };
 
 class Parser : public IParser {
 public:
     explicit Parser(Array<Token> tokens);
-    Expression* parse() override;
+    std::shared_ptr<Expression> parse() override;
 private:
-    Expression* expression();
-    Expression* equality();
+    std::shared_ptr<Expression> expression();
+    std::shared_ptr<Expression> equality();
     bool match(std::initializer_list<TokenType> types);
     bool check(TokenType type) const;
     Token advance();
     bool isAtEnd() const;
     Token peek() const;
     Token previous() const;
-    Expression* comparison();
-    Expression* addition();
-    Expression* multiplication();
-    Expression* unary();
-    Expression* primary();
+    std::shared_ptr<Expression> comparison();
+    std::shared_ptr<Expression> addition();
+    std::shared_ptr<Expression> multiplication();
+    std::shared_ptr<Expression> unary();
+    std::shared_ptr<Expression> primary();
     Token consume(TokenType type, const String& message);
     ParseError error(const Token& token, const String& message) const;
     void synchronize();

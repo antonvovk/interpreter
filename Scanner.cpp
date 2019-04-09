@@ -31,7 +31,7 @@ Array<Token> Scanner::scanTokens() {
         scanToken();
     }
 
-    tokens.push_back(Token(TokenType::EOFL, "", "", ++line));
+    tokens.push_back(Token(TokenType::EOFL, "", String(""), ++line));
     return tokens;
 }
 
@@ -102,10 +102,10 @@ char Scanner::advance() {
 }
 
 void Scanner::addToken(TokenType type) {
-    addToken(type, "");
+    addToken(type, String(""));
 }
 
-void Scanner::addToken(TokenType type, String literal) {
+void Scanner::addToken(TokenType type, Object literal) {
     String text = source.substr(start, current - start);
     tokens.push_back(Token(type, text, std::move(literal), line));
 }
@@ -163,8 +163,8 @@ void Scanner::number() {
             advance();
         }
     }
-
-    addToken(TokenType::NUMBER, source.substr(start, current - start));
+    String s = source.substr(start, current - start);
+    addToken(TokenType::NUMBER, (double)std::stold(source.substr(start, current - start)));
 }
 
 char Scanner::peekNext() {

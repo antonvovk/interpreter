@@ -5,22 +5,22 @@
 
 interface IBinary {
 public:
-    virtual Expression* Left() const = 0;
+    virtual std::shared_ptr<Expression> Left() const = 0;
     virtual Token Operatr() const = 0;
-    virtual Expression* Right() const = 0;
+    virtual std::shared_ptr<Expression> Right() const = 0;
 };
 
 class Binary : public Expression, public IBinary {
 public:
-    explicit Binary(Expression* left, Token operatr, Expression* right);
+    explicit Binary(std::shared_ptr<Expression> left, Token operatr, std::shared_ptr<Expression> right);
     Object accept(Visitor &visitor) override;
-    Expression* Left() const override;
+    std::shared_ptr<Expression> Left() const override;
     Token Operatr() const override;
-    Expression* Right() const override;
+    std::shared_ptr<Expression> Right() const override;
 private:
-    Expression* left;
+    std::shared_ptr<Expression> left;
     Token operatr;
-    Expression* right;
+    std::shared_ptr<Expression> right;
 };
 
 #endif

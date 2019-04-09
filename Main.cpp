@@ -1,8 +1,7 @@
 #include "Scanner.h"
-#include "Token.h"
 #include "Printer.h"
-#include "Expression.h"
 #include "Parser.h"
+#include "Interpreter.h"
 
 void test(const String &line) {
     Scanner scanner(line);
@@ -13,7 +12,7 @@ void test(const String &line) {
     }
 
     Parser parser(tokens);
-    Expression* expression = parser.parse();
+    std::shared_ptr<Expression> expression = parser.parse();
 
     if (expression == nullptr) {
         return;
@@ -22,9 +21,8 @@ void test(const String &line) {
     Printer printer;
     std::cout << printer.print(expression) << '\n';
 
-    Expression *expression2 = new Binary(new Unary(*new Token(TokenType::MINUS, String("-"), String(""), 1), new Literal(String("123"))), *new Token(TokenType::STAR, String("*"), String(""), 1), new Grouping(new Literal(String("45.67"))));
-
-    std::cout << printer.print(expression2);
+    Interpreter interpreter;
+    interpreter.interpret(expression);
 }
 
 int main() {

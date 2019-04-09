@@ -1,6 +1,6 @@
 #include "Assign.h"
 
-Assign::Assign(Token name, Expression* value) : name(std::move(name)), value(value) {
+Assign::Assign(Token name, std::shared_ptr<Expression> value) : name(std::move(name)), value(std::move(value)) {
 
 }
 
@@ -12,6 +12,6 @@ Token Assign::Name() const {
     return this->name;
 }
 
-Expression* Assign::Value() const {
+std::shared_ptr<Expression> Assign::Value() const {
     return this->value;
 }

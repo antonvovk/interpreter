@@ -5,22 +5,22 @@
 
 interface ISet {
 public:
-    virtual Expression* Obj() const = 0;
+    virtual std::shared_ptr<Expression> Obj() const = 0;
     virtual Token Name() const = 0;
-    virtual Expression* Value() const = 0;
+    virtual std::shared_ptr<Expression> Value() const = 0;
 };
 
 class Set : public Expression, public ISet {
 public:
-    explicit Set(Expression* object, Token name, Expression* value);
+    explicit Set(std::shared_ptr<Expression> object, Token name, std::shared_ptr<Expression> value);
     Object accept(Visitor &visitor) override;
-    Expression* Obj() const override;
+    std::shared_ptr<Expression> Obj() const override;
     Token Name() const override;
-    Expression* Value() const override;
+    std::shared_ptr<Expression> Value() const override;
 private:
-    Expression* object;
+    std::shared_ptr<Expression> object;
     Token name;
-    Expression* value;
+    std::shared_ptr<Expression> value;
 };
 
 #endif

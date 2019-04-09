@@ -5,22 +5,22 @@
 
 interface ICall {
 public:
-    virtual Expression* Callee() const = 0;
+    virtual std::shared_ptr<Expression> Callee() const = 0;
     virtual Token Paren() const = 0;
-    virtual Array<Expression*> Arguments() const = 0;
+    virtual Array<std::shared_ptr<Expression>> Arguments() const = 0;
 };
 
 class Call : public Expression, public ICall {
 public:
-    explicit Call(Expression* callee, Token paren, Array<Expression*> arguments);
+    explicit Call(std::shared_ptr<Expression> callee, Token paren, Array<std::shared_ptr<Expression>> arguments);
     Object accept(Visitor &visitor) override;
-    Expression* Callee() const override;
+    std::shared_ptr<Expression> Callee() const override;
     Token Paren() const override;
-    Array<Expression*> Arguments() const override;
+    Array<std::shared_ptr<Expression>> Arguments() const override;
 private:
-    Expression* callee;
+    std::shared_ptr<Expression> callee;
     Token paren;
-    Array<Expression*> arguments;
+    Array<std::shared_ptr<Expression>> arguments;
 };
 
 #endif

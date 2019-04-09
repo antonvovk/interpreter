@@ -4,7 +4,7 @@ Parser::Parser(Array<Token> tokens) : tokens(std::move(tokens)) {
 
 }
 
-Expression *Parser::parse() {
+std::shared_ptr<Expression> Parser::parse() {
     try {
         return expression();
     }
@@ -13,17 +13,17 @@ Expression *Parser::parse() {
     }
 }
 
-Expression* Parser::expression() {
+std::shared_ptr<Expression> Parser::expression() {
     return equality();
 }
 
-Expression* Parser::equality() {
-    Expression* expr = comparison();
+std::shared_ptr<Expression> Parser::equality() {
+    std::shared_ptr<Expression> expr = comparison();
 
     while (match({TokenType::BANG_EQUAL, TokenType::EQUAL_EQUAL})) {
         Token operatr = previous();
-        Expression* right = comparison();
-        expr = new Binary(expr, operatr, right);
+        std::shared_ptr<Expression> right = comparison();
+        expr = std::make_shared<Binary>(expr, operatr, right);
     }
 
     return expr;
@@ -68,73 +68,73 @@ Token Parser::previous() const {
     return tokens.at(current - 1);
 }
 
-Expression* Parser::comparison() {
-    Expression* expr = addition();
+std::shared_ptr<Expression> Parser::comparison() {
+    std::shared_ptr<Expression> expr = addition();
 
     while (match({TokenType::GREATER, TokenType::GREATER_EQUAL, TokenType::LESS, TokenType::LESS_EQUAL})) {
         Token operatr = previous();
-        Expression* right = addition();
-        expr = new Binary(expr, operatr, right);
+        std::shared_ptr<Expression> right = addition();
+        expr = std::make_shared<Binary>(expr, operatr, right);
     }
 
     return expr;
 }
 
-Expression* Parser::addition() {
-    Expression* expr = multiplication();
+std::shared_ptr<Expression> Parser::addition() {
+    std::shared_ptr<Expression> expr = multiplication();
 
     while (match({TokenType::MINUS, TokenType::PLUS})) {
         Token operatr = previous();
-        Expression* right = multiplication();
-        expr = new Binary(expr, operatr, right);
+        std::shared_ptr<Expression> right = multiplication();
+        expr = std::make_shared<Binary>(expr, operatr, right);
     }
 
     return expr;
 }
 
-Expression* Parser::multiplication() {
-    Expression* expr = unary();
+std::shared_ptr<Expression> Parser::multiplication() {
+    std::shared_ptr<Expression> expr = unary();
 
     while (match({TokenType::SLASH, TokenType::STAR})) {
         Token operatr = previous();
-        Expression* right = unary();
-        expr = new Binary(expr, operatr, right);
+        std::shared_ptr<Expression> right = unary();
+        expr = std::make_shared<Binary>(expr, operatr, right);
     }
 
     return expr;
 }
 
-Expression *Parser::unary() {
+std::shared_ptr<Expression> Parser::unary() {
     if (match({TokenType::BANG, TokenType::MINUS})) {
         Token operatr = previous();
-        Expression* right = unary();
-        return new Unary(operatr, right);
+        std::shared_ptr<Expression> right = unary();
+        return std::make_shared<Unary>(operatr, right);
     }
 
     return primary();
 }
 
-Expression *Parser::primary() {
+std::shared_ptr<Expression> Parser::primary() {
     if (match({TokenType::FALSE})) {
-        return new Literal("false");
+        return std::make_shared<Literal>(false);
     }
 
     if (match({TokenType::TRUE})) {
-        return new Literal("true");
+        return std::make_shared<Literal>(true);
     }
 
     if (match({TokenType::NIL})) {
-        return new Literal("null");
+        return std::make_shared<Literal>(nullptr);
     }
 
     if (match({TokenType::NUMBER, TokenType::STRING})) {
-        return new Literal(previous().Literal());
+        return std::make_shared<Literal>(previous().Literal());
     }
 
     if (match({TokenType::LEFT_PAREN})) {
-        Expression* expr = expression();
+        std::shared_ptr<Expression> expr = expression();
         consume(TokenType::RIGHT_PAREN, "Expect ')' after expression.");
-        return new Grouping(expr);
+        return std::make_shared<Grouping>(expr);
     }
 
     throw error(peek(), "Expect expression.");
@@ -156,7 +156,7 @@ ParseError Parser::error(const Token& token, const String& message) const {
         std::cout << token.Line() << " at '" << token.Lexeme() << "'" << message;
     }
 
-    return *new ParseError();
+    return ParseError();
 }
 
 void Parser::synchronize() {

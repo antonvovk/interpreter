@@ -1,6 +1,6 @@
 #include "Set.h"
 
-Set::Set(Expression* object, Token name, Expression* value) : object(object), name(std::move(name)), value(value) {
+Set::Set(std::shared_ptr<Expression> object, Token name, std::shared_ptr<Expression> value) : object(std::move(object)), name(std::move(name)), value(std::move(value)) {
 
 }
 
@@ -8,7 +8,7 @@ Object Set::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 
-Expression* Set::Obj() const {
+std::shared_ptr<Expression> Set::Obj() const {
     return this->object;
 }
 
@@ -16,6 +16,6 @@ Token Set::Name() const {
     return this->name;
 }
 
-Expression* Set::Value() const {
+std::shared_ptr<Expression> Set::Value() const {
     return this->value;
 }

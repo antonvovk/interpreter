@@ -5,18 +5,18 @@
 
 interface IGet {
 public:
-    virtual Expression* Obj() const = 0;
+    virtual std::shared_ptr<Expression> Obj() const = 0;
     virtual Token Name() const = 0;
 };
 
 class Get : public Expression, public IGet {
 public:
-    explicit Get(Expression* object, Token name);
+    explicit Get(std::shared_ptr<Expression> object, Token name);
     Object accept(Visitor &visitor) override;
-    Expression* Obj() const override;
+    std::shared_ptr<Expression> Obj() const override;
     Token Name() const override;
 private:
-    Expression* object;
+    std::shared_ptr<Expression> object;
     Token name;
 };
 

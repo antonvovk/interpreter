@@ -6,18 +6,18 @@
 interface IAssign {
 public:
     virtual Token Name() const = 0;
-    virtual Expression* Value() const = 0;
+    virtual std::shared_ptr<Expression> Value() const = 0;
 };
 
 class Assign : public Expression, public IAssign {
 public:
-    explicit Assign(Token name, Expression* value);
+    explicit Assign(Token name, std::shared_ptr<Expression> value);
     Object accept(Visitor &visitor) override;
     Token Name() const override;
-    Expression* Value() const override;
+    std::shared_ptr<Expression> Value() const override;
 private:
     Token name;
-    Expression* value;
+    std::shared_ptr<Expression> value;
 };
 
 #endif

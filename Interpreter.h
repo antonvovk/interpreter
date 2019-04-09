@@ -1,5 +1,5 @@
-#ifndef PRINTER_H
-#define PRINTER_H
+#ifndef INTERPRETER_H
+#define INTERPRETER_H
 
 #include "Expression.h"
 #include "Expressions/Assign.h"
@@ -14,15 +14,16 @@
 #include "Expressions/This.h"
 #include "Expressions/Unary.h"
 #include "Expressions/Variable.h"
+#include "RuntimeError.h"
 
-interface IPrinter {
+interface IInterpreter {
 public:
-    virtual String print(std::shared_ptr<Expression> expr) = 0;
+    virtual void interpret(std::shared_ptr<Expression> expression) = 0;
 };
 
-class Printer : public Expression::Visitor, public IPrinter {
+class Interpreter : public IInterpreter, public Expression::Visitor {
 public:
-    String print(std::shared_ptr<Expression> expr) override;
+    void interpret(std::shared_ptr<Expression> expression) override ;
 private:
     Object visit(Assign &expr) override;
     Object visit(Binary &expr) override;
@@ -36,7 +37,11 @@ private:
     Object visit(This &expr) override;
     Object visit(Unary &expr) override;
     Object visit(Variable &expr) override;
-    String parenthesize(const String& name, std::initializer_list<std::shared_ptr<Expression>> exprs);
+    Object evaluate(const std::shared_ptr<Expression>& expr);
+    static bool isTruthy(Object object);
+    static bool isEqual(const Object& a, const Object& b);
+    static void checkNumberOperand(Token operatr, const Object& operand);
+    static void checkNumberOperands(Token operatr, const Object& left, const Object& right);
 };
 
 #endif

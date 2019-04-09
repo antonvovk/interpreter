@@ -5,16 +5,16 @@
 
 interface IGrouping {
 public:
-    virtual Expression* Expr() const = 0;
+    virtual std::shared_ptr<Expression> Expr() const = 0;
 };
 
 class Grouping : public Expression, public IGrouping {
 public:
-    explicit Grouping(Expression* expression);
+    explicit Grouping(std::shared_ptr<Expression> expression);
     Object accept(Visitor &visitor) override;
-    Expression* Expr() const override;
+    std::shared_ptr<Expression> Expr() const override;
 private:
-    Expression* expr;
+    std::shared_ptr<Expression> expr;
 };
 
 #endif

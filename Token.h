@@ -25,23 +25,23 @@ public:
     virtual String toString() const = 0;
     virtual TokenType Type() const = 0;
     virtual String Lexeme() const = 0;
-    virtual String Literal() const = 0;
+    virtual Object Literal() const = 0;
     virtual int Line() const = 0;
 };
 
 class Token : public IToken {
 public:
     explicit Token();
-    explicit Token(TokenType type, String lexeme, String literal, int line);
+    explicit Token(TokenType type, String lexeme, Object literal, int line);
     String toString() const override;
     TokenType Type() const override;
     String Lexeme() const override;
-    String Literal() const override;
+    Object Literal() const override;
     int Line() const override;
 private:
     TokenType type;
     String lexeme{};
-    String literal{};
+    Object literal{};
     int line{};
 };
 

@@ -5,22 +5,22 @@
 
 interface ILogical {
 public:
-    virtual Expression* Left() const = 0;
+    virtual std::shared_ptr<Expression> Left() const = 0;
     virtual Token Operatr() const = 0;
-    virtual Expression* Right() const = 0;
+    virtual std::shared_ptr<Expression> Right() const = 0;
 };
 
 class Logical : public Expression, public ILogical {
 public:
-    explicit Logical(Expression* left, Token operatr, Expression* right);
+    explicit Logical(std::shared_ptr<Expression> left, Token operatr, std::shared_ptr<Expression> right);
     Object accept(Visitor &visitor) override;
-    Expression* Left() const override;
+    std::shared_ptr<Expression> Left() const override;
     Token Operatr() const override;
-    Expression* Right() const override;
+    std::shared_ptr<Expression> Right() const override;
 private:
-    Expression* left;
+    std::shared_ptr<Expression> left;
     Token operatr;
-    Expression* right;
+    std::shared_ptr<Expression> right;
 };
 
 #endif

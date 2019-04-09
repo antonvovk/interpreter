@@ -1,6 +1,6 @@
 #include "Grouping.h"
 
-Grouping::Grouping(Expression* expr) : expr(expr) {
+Grouping::Grouping(std::shared_ptr<Expression> expr) : expr(std::move(expr)) {
 
 }
 
@@ -8,6 +8,6 @@ Object Grouping::accept(Visitor &visitor) {
     return visitor.visit(*this);
 }
 
-Expression* Grouping::Expr() const {
+std::shared_ptr<Expression> Grouping::Expr() const {
     return this->expr;
 }
