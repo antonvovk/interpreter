@@ -40,4 +40,4 @@ add_executable(interpreter
         Scanner.h
         Token.cpp
         Token.h
-        Utils.h Parser.cpp Parser.h ParseError.h Interpreter.cpp Interpreter.h RuntimeError.h Utils.cpp)
+        Utils.h Parser.cpp Parser.h ParseError.h Interpreter.cpp Interpreter.h RuntimeError.h Utils.cpp Statement.h Statements/Block.cpp Statements/Block.h Statements/Class.cpp Statements/Class.h Statements/ExpressionStmnt.cpp Statements/ExpressionStmnt.h Statements/Function.cpp Statements/Function.h Statements/If.cpp Statements/If.h Statements/Print.cpp Statements/Print.h Statements/Return.cpp Statements/Return.h Statements/Var.cpp Statements/Var.h Statements/While.cpp Statements/While.h)

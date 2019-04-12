@@ -15,17 +15,30 @@
 #include "Expressions/This.h"
 #include "Expressions/Unary.h"
 #include "Expressions/Variable.h"
+#include "Statement.h"
+#include "Statements/Block.h"
+#include "Statements/Class.h"
+#include "Statements/ExpressionStmnt.h"
+#include "Statements/Function.h"
+#include "Statements/If.h"
+#include "Statements/Print.h"
+#include "Statements/Return.h"
+#include "Statements/Var.h"
+#include "Statements/While.h"
 
 interface IParser {
 public:
-    virtual std::shared_ptr<Expression> parse() = 0;
+    virtual Array<std::shared_ptr<Statement>> parse() = 0;
 };
 
 class Parser : public IParser {
 public:
     explicit Parser(Array<Token> tokens);
-    std::shared_ptr<Expression> parse() override;
+    Array<std::shared_ptr<Statement>> parse() override;
 private:
+    std::shared_ptr<Statement> statement();
+    std::shared_ptr<Statement> printStatement();
+    std::shared_ptr<Statement> expressionStatement();
     std::shared_ptr<Expression> expression();
     std::shared_ptr<Expression> equality();
     bool match(std::initializer_list<TokenType> types);

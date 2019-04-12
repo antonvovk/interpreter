@@ -2,11 +2,13 @@
 
 #include "Interpreter.h"
 
-void Interpreter::interpret(std::shared_ptr<Expression> expression) {
+void Interpreter::interpret(Array<std::shared_ptr<Statement>> statements) {
     try {
-        Object value = evaluate(expression);
-        std::cout << '\n' << objectToString(value);
-    } catch (RuntimeError &error) {
+        for (const std::shared_ptr<Statement>& statement : statements) {
+            execute(statement);
+        }
+    }
+    catch (RuntimeError &error) {
         std::cout << error.what();
         return;
     }
@@ -172,7 +174,7 @@ Object Interpreter::visit(Binary &expr) {
                 return std::any_cast<long double>(left) + std::any_cast<long double>(right);
             }
             else if (right.type() == typeid(String)) {
-                return std::any_cast<String>(left) <= std::any_cast<String>(right);
+                return std::any_cast<String>(left) + std::any_cast<String>(right);
             }
 
             throw RuntimeError(expr.Operatr(), "Operands must be two numbers or two strings.");
@@ -320,7 +322,31 @@ bool Interpreter::isTruthy(Object object) {
 }
 
 bool Interpreter::isEqual(const Object& a, const Object& b) {
-    return a.type() == b.type();
+    if (a.type() == typeid(short)) {
+        return std::any_cast<short>(a) == std::any_cast<short>(b);
+    }
+    else if (a.type() == typeid(int)) {
+        return std::any_cast<int>(a) == std::any_cast<int>(b);
+    }
+    else if (a.type() == typeid(long)) {
+        return std::any_cast<long>(a) == std::any_cast<long>(b);
+    }
+    else if (a.type() == typeid(long long)) {
+        return std::any_cast<long long>(a) == std::any_cast<long long>(b);
+    }
+    else if (a.type() == typeid(float)) {
+        return std::any_cast<float>(a) == std::any_cast<float>(b);
+    }
+    else if (a.type() == typeid(double)) {
+        return std::any_cast<double>(a) == std::any_cast<double>(b);
+    }
+    else if (a.type() == typeid(long double)) {
+        return std::any_cast<long double>(a) == std::any_cast<long double>(b);
+    }
+    else if (a.type() == typeid(String)) {
+        return std::any_cast<String>(a) == std::any_cast<String>(b);
+    }
+    return true;
 }
 
 void Interpreter::checkNumberOperand(Token operatr, const Object& operand) {
@@ -349,4 +375,47 @@ void Interpreter::checkNumberOperands(Token operatr, const Object& left, const O
     }
 
     throw RuntimeError(std::move(operatr), "Operands must be numbers.");
+}
+
+Object Interpreter::visit(Block &stmnt) {
+    return nullptr;
+}
+
+Object Interpreter::visit(Class &stmnt) {
+    return nullptr;
+}
+
+Object Interpreter::visit(ExpressionStmnt &stmnt) {
+    evaluate(stmnt.Expr());
+    return nullptr;
+}
+
+Object Interpreter::visit(Function &stmnt) {
+    return nullptr;
+}
+
+Object Interpreter::visit(If &stmnt) {
+    return nullptr;
+}
+
+Object Interpreter::visit(Print &stmnt) {
+    Object value = evaluate(stmnt.Expr());
+    std::cout << objectToString(value);
+    return nullptr;
+}
+
+Object Interpreter::visit(Return &stmnt) {
+    return nullptr;
+}
+
+Object Interpreter::visit(Var &stmnt) {
+    return nullptr;
+}
+
+Object Interpreter::visit(While &stmnt) {
+    return nullptr;
+}
+
+void Interpreter::execute(const std::shared_ptr<Statement>& stmt) {
+    stmt->accept(*this);
 }

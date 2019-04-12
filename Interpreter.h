@@ -15,15 +15,25 @@
 #include "Expressions/Unary.h"
 #include "Expressions/Variable.h"
 #include "RuntimeError.h"
+#include "Statement.h"
+#include "Statements/Block.h"
+#include "Statements/Class.h"
+#include "Statements/ExpressionStmnt.h"
+#include "Statements/Function.h"
+#include "Statements/If.h"
+#include "Statements/Print.h"
+#include "Statements/Return.h"
+#include "Statements/Var.h"
+#include "Statements/While.h"
 
 interface IInterpreter {
 public:
-    virtual void interpret(std::shared_ptr<Expression> expression) = 0;
+    virtual void interpret(Array<std::shared_ptr<Statement>> expression) = 0;
 };
 
-class Interpreter : public IInterpreter, public Expression::Visitor {
+class Interpreter : public IInterpreter, public Expression::Visitor, public Statement::Visitor {
 public:
-    void interpret(std::shared_ptr<Expression> expression) override ;
+    void interpret(Array<std::shared_ptr<Statement>> statements) override ;
 private:
     Object visit(Assign &expr) override;
     Object visit(Binary &expr) override;
@@ -42,6 +52,16 @@ private:
     static bool isEqual(const Object& a, const Object& b);
     static void checkNumberOperand(Token operatr, const Object& operand);
     static void checkNumberOperands(Token operatr, const Object& left, const Object& right);
+    Object visit(Block &stmnt) override;
+    Object visit(Class &stmnt) override;
+    Object visit(ExpressionStmnt &stmnt) override;
+    Object visit(Function &stmnt) override;
+    Object visit(If &stmnt) override;
+    Object visit(Print &stmnt) override;
+    Object visit(Return &stmnt) override;
+    Object visit(Var &stmnt) override;
+    Object visit(While &stmnt) override;
+    void execute(const std::shared_ptr<Statement>& stmt);
 };
 
 #endif

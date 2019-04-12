@@ -1,0 +1,24 @@
+#ifndef VAR_H
+#define VAR_H
+
+#include "../Statement.h"
+#include "../Expression.h"
+
+interface IVar {
+public:
+    virtual Token Name() const = 0;
+    virtual std::shared_ptr<Expression> Initializer() const = 0;
+};
+
+class Var : public Statement, public IVar {
+public:
+    explicit Var(Token name, std::shared_ptr<Expression> initializer);
+    Object accept(Visitor &visitor) override;
+    Token Name() const override;
+    std::shared_ptr<Expression> Initializer() const override;
+private:
+    Token name;
+    std::shared_ptr<Expression> initializer;
+};
+
+#endif

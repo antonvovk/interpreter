@@ -7,22 +7,15 @@ void test(const String &line) {
     Scanner scanner(line);
     Array<Token> tokens = scanner.scanTokens();
 
-    for (const auto &token : tokens) {
-        std::cout << token.toString() << '\n';
-    }
-
     Parser parser(tokens);
-    std::shared_ptr<Expression> expression = parser.parse();
+    Array<std::shared_ptr<Statement>> statements = parser.parse();
 
-    if (expression == nullptr) {
+    if (statements.empty()) {
         return;
     }
 
-    Printer printer;
-    std::cout << printer.print(expression) << '\n';
-
     Interpreter interpreter;
-    interpreter.interpret(expression);
+    interpreter.interpret(statements);
 }
 
 int main() {

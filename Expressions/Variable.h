@@ -10,6 +10,7 @@ public:
 
 class Variable : public Expression, public IVariable {
 public:
+    explicit Variable() = default;
     explicit Variable(Token name);
     Object accept(Visitor &visitor) override;
     Token Name() const override;
