@@ -37,6 +37,7 @@ public:
     Array<std::shared_ptr<Statement>> parse() override;
 private:
     std::shared_ptr<Statement> statement();
+    Array<std::shared_ptr<Statement>> block();
     std::shared_ptr<Statement> printStatement();
     std::shared_ptr<Statement> expressionStatement();
     std::shared_ptr<Statement> declaration();

@@ -19,14 +19,11 @@ void test(const String &line) {
 }
 
 int main() {
-    String line;
     File file("Test.txt");
 
     if (file.is_open()) {
-        while (getline(file, line)) {
-            test(line);
-        }
-
+        std::string str((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+        test(str);
         file.close();
     }
     else {

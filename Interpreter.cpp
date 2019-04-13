@@ -1,5 +1,9 @@
 #include <utility>
 
+#include <utility>
+
+#include <utility>
+
 #include "Interpreter.h"
 
 void Interpreter::interpret(Array<std::shared_ptr<Statement>> statements) {
@@ -381,6 +385,7 @@ void Interpreter::checkNumberOperands(Token operatr, const Object& left, const O
 }
 
 Object Interpreter::visit(Block &stmnt) {
+    executeBlock(stmnt.Statements(), Environment (environment));
     return nullptr;
 }
 
@@ -403,7 +408,7 @@ Object Interpreter::visit(If &stmnt) {
 
 Object Interpreter::visit(Print &stmnt) {
     Object value = evaluate(stmnt.Expr());
-    std::cout << objectToString(value);
+    std::cout << objectToString(value) << '\n';
     return nullptr;
 }
 
@@ -427,4 +432,15 @@ Object Interpreter::visit(While &stmnt) {
 
 void Interpreter::execute(const std::shared_ptr<Statement>& stmt) {
     stmt->accept(*this);
+}
+
+void Interpreter::executeBlock(const Array<std::shared_ptr<Statement>>& statements, Environment environment_arg) {
+    Environment previous = this->environment;
+    this->environment = std::move(environment_arg);
+
+    for (const std::shared_ptr<Statement>& statement : statements) {
+        execute(statement);
+    }
+
+    this->environment = previous;
 }

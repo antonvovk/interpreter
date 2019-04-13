@@ -63,8 +63,9 @@ private:
     Object visit(Var &stmnt) override;
     Object visit(While &stmnt) override;
     void execute(const std::shared_ptr<Statement>& stmt);
+    void executeBlock(const Array<std::shared_ptr<Statement>>& statements, Environment environment_arg);
 
-    Environment environment;
+    Environment environment{};
 };
 
 #endif

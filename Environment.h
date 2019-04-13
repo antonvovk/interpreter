@@ -14,11 +14,13 @@ public:
 
 class Environment : public IEnvironment {
 public:
+    explicit Environment();
     void define(const String& name, const Object& value) const override;
     Object get(const Token& name) const override;
     void assign(Token name, Object value) const override;
 private:
-    static Map<String, Object> values;
+    mutable Map<String, Object> values{};
+    std::shared_ptr<Environment> enclosing{};
 };
 
 #endif

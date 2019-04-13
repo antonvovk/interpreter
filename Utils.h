@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <streambuf>
 #include <string>
 #include <vector>
 #include <map>

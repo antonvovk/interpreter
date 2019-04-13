@@ -19,7 +19,22 @@ std::shared_ptr<Statement> Parser::statement() {
         return printStatement();
     }
 
+    if (match({TokenType::LEFT_BRACE})) {
+        return std::make_shared<Block> (block());
+    }
+
     return expressionStatement();
+}
+
+Array<std::shared_ptr<Statement>> Parser::block() {
+    Array<std::shared_ptr<Statement>> statements;
+
+    while (!check(TokenType::RIGHT_BRACE) && !isAtEnd()) {
+        statements.push_back(declaration());
+    }
+
+    consume(TokenType::RIGHT_BRACE, "Expect '}' after block.");
+    return statements;
 }
 
 std::shared_ptr<Statement> Parser::declaration() {
