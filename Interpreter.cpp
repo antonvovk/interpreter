@@ -302,7 +302,7 @@ Object Interpreter::visit(Unary &expr) {
 }
 
 Object Interpreter::visit(Variable &expr) {
-    return Object();
+    return environment.get(expr.Name());
 }
 
 Object Interpreter::evaluate(const std::shared_ptr<Expression>& expr) {
@@ -409,6 +409,12 @@ Object Interpreter::visit(Return &stmnt) {
 }
 
 Object Interpreter::visit(Var &stmnt) {
+    Object value = nullptr;
+    if (stmnt.Initializer() != nullptr) {
+        value = evaluate(stmnt.Initializer());
+    }
+
+    environment.define(stmnt.Name().Lexeme(), value);
     return nullptr;
 }
 

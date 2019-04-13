@@ -25,6 +25,7 @@
 #include "Statements/Return.h"
 #include "Statements/Var.h"
 #include "Statements/While.h"
+#include "Environment.h"
 
 interface IInterpreter {
 public:
@@ -62,6 +63,8 @@ private:
     Object visit(Var &stmnt) override;
     Object visit(While &stmnt) override;
     void execute(const std::shared_ptr<Statement>& stmt);
+
+    Environment environment;
 };
 
 #endif
