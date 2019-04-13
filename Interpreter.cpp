@@ -15,7 +15,10 @@ void Interpreter::interpret(Array<std::shared_ptr<Statement>> statements) {
 }
 
 Object Interpreter::visit(Assign &expr) {
-    return Object();
+    Object value = evaluate(expr.Value());
+
+    environment.assign(expr.Name(), value);
+    return value;
 }
 
 Object Interpreter::visit(Binary &expr) {

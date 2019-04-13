@@ -42,6 +42,7 @@ private:
     std::shared_ptr<Statement> declaration();
     std::shared_ptr<Statement> varDeclaration();
     std::shared_ptr<Expression> expression();
+    std::shared_ptr<Expression> assignment();
     std::shared_ptr<Expression> equality();
     bool match(std::initializer_list<TokenType> types);
     bool check(TokenType type) const;
