@@ -19,6 +19,10 @@ std::shared_ptr<Statement> Parser::statement() {
         return printStatement();
     }
 
+    if (match({TokenType::MOVE})) {
+        return moveStatement();
+    }
+
     if (match({TokenType::LEFT_BRACE})) {
         return std::make_shared<Block> (block());
     }
@@ -67,6 +71,14 @@ std::shared_ptr<Statement> Parser::printStatement() {
     std::shared_ptr<Expression> value = expression();
     consume(TokenType::SEMICOLON, "Expect ';' after value.");
     return std::make_shared<Print>(value);
+}
+
+std::shared_ptr<Statement> Parser::moveStatement() {
+    std::shared_ptr<Expression> value1 = expression();
+    std::shared_ptr<Expression> value2 = expression();
+    consume(TokenType::SEMICOLON, "Expect ';' after value.");
+
+    return std::make_shared<Move>(value1, value2);
 }
 
 std::shared_ptr<Statement> Parser::expressionStatement() {
@@ -255,6 +267,7 @@ void Parser::synchronize() {
             case TokenType::IF:
             case TokenType::WHILE:
             case TokenType::PRINT:
+            case TokenType::MOVE:
             case TokenType::RETURN:
                 return;
         }

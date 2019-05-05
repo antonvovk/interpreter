@@ -5,24 +5,17 @@
 #include "Expression.h"
 #include "Expressions/Assign.h"
 #include "Expressions/Binary.h"
-#include "Expressions/Call.h"
-#include "Expressions/Get.h"
 #include "Expressions/Grouping.h"
 #include "Expressions/Literal.h"
 #include "Expressions/Logical.h"
-#include "Expressions/Set.h"
-#include "Expressions/Super.h"
-#include "Expressions/This.h"
 #include "Expressions/Unary.h"
 #include "Expressions/Variable.h"
 #include "Statement.h"
 #include "Statements/Block.h"
-#include "Statements/Class.h"
 #include "Statements/ExpressionStmnt.h"
-#include "Statements/Function.h"
 #include "Statements/If.h"
 #include "Statements/Print.h"
-#include "Statements/Return.h"
+#include "Statements/Move.h"
 #include "Statements/Var.h"
 #include "Statements/While.h"
 
@@ -39,6 +32,7 @@ private:
     std::shared_ptr<Statement> statement();
     Array<std::shared_ptr<Statement>> block();
     std::shared_ptr<Statement> printStatement();
+    std::shared_ptr<Statement> moveStatement();
     std::shared_ptr<Statement> expressionStatement();
     std::shared_ptr<Statement> declaration();
     std::shared_ptr<Statement> varDeclaration();

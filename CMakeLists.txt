@@ -11,22 +11,12 @@ add_executable(interpreter
         Expressions/Assign.h
         Expressions/Binary.cpp
         Expressions/Binary.h
-        Expressions/Call.cpp
-        Expressions/Call.h
-        Expressions/Get.cpp
-        Expressions/Get.h
         Expressions/Grouping.cpp
         Expressions/Grouping.h
         Expressions/Literal.cpp
         Expressions/Literal.h
         Expressions/Logical.cpp
         Expressions/Logical.h
-        Expressions/Set.cpp
-        Expressions/Set.h
-        Expressions/Super.cpp
-        Expressions/Super.h
-        Expressions/This.cpp
-        Expressions/This.h
         Expressions/Unary.cpp
         Expressions/Unary.h
         Expressions/Variable.cpp
@@ -34,10 +24,8 @@ add_executable(interpreter
         Enum.h
         Expression.h
         Main.cpp
-        Printer.cpp
-        Printer.h
         Scanner.cpp
         Scanner.h
         Token.cpp
         Token.h
-        Utils.h Parser.cpp Parser.h ParseError.h Interpreter.cpp Interpreter.h RuntimeError.h Utils.cpp Statement.h Statements/Block.cpp Statements/Block.h Statements/Class.cpp Statements/Class.h Statements/ExpressionStmnt.cpp Statements/ExpressionStmnt.h Statements/Function.cpp Statements/Function.h Statements/If.cpp Statements/If.h Statements/Print.cpp Statements/Print.h Statements/Return.cpp Statements/Return.h Statements/Var.cpp Statements/Var.h Statements/While.cpp Statements/While.h Environment.cpp Environment.h)
+        Utils.h Parser.cpp Parser.h ParseError.h Interpreter.cpp Interpreter.h RuntimeError.h Utils.cpp Statement.h Statements/Block.cpp Statements/Block.h Statements/ExpressionStmnt.cpp Statements/ExpressionStmnt.h Statements/If.cpp Statements/If.h Statements/Print.cpp Statements/Print.h Statements/Var.cpp Statements/Var.h Statements/While.cpp Statements/While.h Environment.cpp Environment.h Statements/Move.cpp Statements/Move.h)

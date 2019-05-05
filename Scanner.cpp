@@ -13,6 +13,7 @@ Map<String, TokenType> Scanner::keywords = {
         Pair<String, TokenType> ("nil", TokenType::NIL),
         Pair<String, TokenType> ("or", TokenType::OR),
         Pair<String, TokenType> ("print", TokenType::PRINT),
+        Pair<String, TokenType> ("move", TokenType::MOVE),
         Pair<String, TokenType> ("return", TokenType::RETURN),
         Pair<String, TokenType> ("super", TokenType::SUPER),
         Pair<String, TokenType> ("this", TokenType::THIS),

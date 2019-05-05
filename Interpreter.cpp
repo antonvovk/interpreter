@@ -241,14 +241,6 @@ Object Interpreter::visit(Binary &expr) {
     return nullptr;
 }
 
-Object Interpreter::visit(Call &expr) {
-    return Object();
-}
-
-Object Interpreter::visit(Get &expr) {
-    return Object();
-}
-
 Object Interpreter::visit(Grouping &expr) {
     return evaluate(expr.Expr());
 }
@@ -258,18 +250,6 @@ Object Interpreter::visit(Literal &expr) {
 }
 
 Object Interpreter::visit(Logical &expr) {
-    return Object();
-}
-
-Object Interpreter::visit(Set &expr) {
-    return Object();
-}
-
-Object Interpreter::visit(Super &expr) {
-    return Object();
-}
-
-Object Interpreter::visit(This &expr) {
     return Object();
 }
 
@@ -389,18 +369,11 @@ Object Interpreter::visit(Block &stmnt) {
     return nullptr;
 }
 
-Object Interpreter::visit(Class &stmnt) {
-    return nullptr;
-}
-
 Object Interpreter::visit(ExpressionStmnt &stmnt) {
     evaluate(stmnt.Expr());
     return nullptr;
 }
 
-Object Interpreter::visit(Function &stmnt) {
-    return nullptr;
-}
 
 Object Interpreter::visit(If &stmnt) {
     return nullptr;
@@ -412,7 +385,10 @@ Object Interpreter::visit(Print &stmnt) {
     return nullptr;
 }
 
-Object Interpreter::visit(Return &stmnt) {
+Object Interpreter::visit(Move &stmnt) {
+    Object value1 = evaluate(stmnt.Expr1());
+    Object value2 = evaluate(stmnt.Expr2());
+    std::cout << objectToString(value1) << objectToString(value2) << '\n';
     return nullptr;
 }
 
