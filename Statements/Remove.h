@@ -1,16 +1,16 @@
-#ifndef PRINT_H
-#define PRINT_H
+#ifndef REMOVE_H
+#define REMOVE_H
 
 #include "../Statement.h"
 #include "../Expression.h"
 
-interface IPrint {
+interface IRemove {
     virtual std::shared_ptr<Expression> Expr() const = 0;
 };
 
-class Print : public Statement, public IPrint {
+class Remove : public Statement, public IRemove {
 public:
-    explicit Print(std::shared_ptr<Expression> expression);
+    explicit Remove(std::shared_ptr<Expression> expression);
     Object accept(Visitor &visitor) override;
     std::shared_ptr<Expression> Expr() const override;
 private:

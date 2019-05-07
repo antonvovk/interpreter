@@ -4,7 +4,6 @@ int Scanner::line = 1;
 
 Map<String, TokenType> Scanner::keywords = {
         Pair<String, TokenType> ("and", TokenType::AND),
-        Pair<String, TokenType> ("class", TokenType::CLASS),
         Pair<String, TokenType> ("else", TokenType::ELSE),
         Pair<String, TokenType> ("false", TokenType::FALSE),
         Pair<String, TokenType> ("for", TokenType::FOR),
@@ -14,11 +13,17 @@ Map<String, TokenType> Scanner::keywords = {
         Pair<String, TokenType> ("or", TokenType::OR),
         Pair<String, TokenType> ("print", TokenType::PRINT),
         Pair<String, TokenType> ("move", TokenType::MOVE),
-        Pair<String, TokenType> ("return", TokenType::RETURN),
-        Pair<String, TokenType> ("super", TokenType::SUPER),
-        Pair<String, TokenType> ("this", TokenType::THIS),
+        Pair<String, TokenType> ("copy", TokenType::COPY),
+        Pair<String, TokenType> ("remove", TokenType::REMOVE),
+        Pair<String, TokenType> ("find", TokenType::FIND),
+        Pair<String, TokenType> ("find_same", TokenType::FIND_SAME),
         Pair<String, TokenType> ("true", TokenType::TRUE),
-        Pair<String, TokenType> ("var", TokenType::VAR),
+        Pair<String, TokenType> ("File", TokenType::IO_FILE),
+        Pair<String, TokenType> ("Int", TokenType::INT),
+        Pair<String, TokenType> ("Float", TokenType::FLOAT),
+        Pair<String, TokenType> ("Bool", TokenType::BOOL),
+        Pair<String, TokenType> ("Char", TokenType::CHAR),
+        Pair<String, TokenType> ("String", TokenType::STRING),
         Pair<String, TokenType> ("while", TokenType::WHILE)
 };
 
@@ -107,7 +112,17 @@ void Scanner::addToken(TokenType type) {
 }
 
 void Scanner::addToken(TokenType type, Object literal) {
-    String text = source.substr(start, current - start);
+    String text;
+
+    if (type == TokenType::_from_string("OR")) {
+        ++current;
+        text = source.substr(start, current - start);
+    }
+    else {
+        text = source.substr(start, current - start);
+    }
+
+
     tokens.push_back(Token(type, text, std::move(literal), line));
 }
 
@@ -144,8 +159,13 @@ void Scanner::string() {
 
     advance();
 
-    String value = source.substr(start, current - start);
-    addToken(TokenType::STRING, value);
+    String value = source.substr(start + 1, current - start - 2);
+    if (value.size() == 1) {
+        addToken(TokenType::CHAR, value[0]);
+    }
+    else {
+        addToken(TokenType::STRING, value);
+    }
 }
 
 bool Scanner::isDigit(char c) {
@@ -165,7 +185,14 @@ void Scanner::number() {
         }
     }
     String s = source.substr(start, current - start);
-    addToken(TokenType::NUMBER, (double)std::stold(source.substr(start, current - start)));
+
+    if (s.find('.') != String::npos) {
+        addToken(TokenType::FLOAT, (float)std::stof(source.substr(start, current - start)));
+    }
+    else {
+        addToken(TokenType::INT, (int)std::stoi(source.substr(start, current - start)));
+    }
+
 }
 
 char Scanner::peekNext() {

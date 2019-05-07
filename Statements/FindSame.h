@@ -1,16 +1,16 @@
-#ifndef PRINT_H
-#define PRINT_H
+#ifndef FINDSAME_H
+#define FINDSAME_H
 
 #include "../Statement.h"
 #include "../Expression.h"
 
-interface IPrint {
+interface IFindSame {
     virtual std::shared_ptr<Expression> Expr() const = 0;
 };
 
-class Print : public Statement, public IPrint {
+class FindSame : public Statement, public IFindSame {
 public:
-    explicit Print(std::shared_ptr<Expression> expression);
+    explicit FindSame(std::shared_ptr<Expression> expression);
     Object accept(Visitor &visitor) override;
     std::shared_ptr<Expression> Expr() const override;
 private:

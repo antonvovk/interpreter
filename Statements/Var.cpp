@@ -1,6 +1,6 @@
 #include "Var.h"
 
-Var::Var(Token name, std::shared_ptr<Expression> initializer) : name(std::move(name)), initializer(std::move(initializer)) {
+Var::Var(Token name, std::shared_ptr<Expression> initializer, String type) : name(std::move(name)), initializer(std::move(initializer)), type(std::move(type)) {
 
 }
 
@@ -14,4 +14,8 @@ Token Var::Name() const {
 
 std::shared_ptr<Expression> Var::Initializer() const {
     return initializer;
+}
+
+String Var::Type() const {
+    return type;
 }

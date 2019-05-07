@@ -25,6 +25,9 @@ String objectToString(const Object& any) {
     else if (any.type() == typeid(const char*)) {
         return std::string(std::any_cast<const char*>(any));
     }
+    else if (any.type() == typeid(char)) {
+        return std::string(1, std::any_cast<char>(any));
+    }
     else if (any.type() == typeid(bool)) {
         return std::to_string(std::any_cast<bool>(any));
     }

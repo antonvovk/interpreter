@@ -8,10 +8,10 @@ Object Move::accept(Statement::Visitor &visitor) {
     return visitor.visit(*this);
 }
 
-std::shared_ptr<Expression> Move::Expr1() const {
+std::shared_ptr<Expression>& Move::Expr1() {
     return expression1;
 }
 
-std::shared_ptr<Expression> Move::Expr2() const {
+std::shared_ptr<Expression>& Move::Expr2() {
     return expression2;
 }

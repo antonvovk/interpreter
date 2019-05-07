@@ -1,7 +1,6 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include "ParseError.h"
 #include "Expression.h"
 #include "Expressions/Assign.h"
 #include "Expressions/Binary.h"
@@ -16,6 +15,10 @@
 #include "Statements/If.h"
 #include "Statements/Print.h"
 #include "Statements/Move.h"
+#include "Statements/Copy.h"
+#include "Statements/Remove.h"
+#include "Statements/Find.h"
+#include "Statements/FindSame.h"
 #include "Statements/Var.h"
 #include "Statements/While.h"
 
@@ -30,12 +33,23 @@ public:
     Array<std::shared_ptr<Statement>> parse() override;
 private:
     std::shared_ptr<Statement> statement();
+    std::shared_ptr<Statement> ifStatement();
+    std::shared_ptr<Statement> whileStatement();
     Array<std::shared_ptr<Statement>> block();
     std::shared_ptr<Statement> printStatement();
     std::shared_ptr<Statement> moveStatement();
+    std::shared_ptr<Statement> copyStatement();
+    std::shared_ptr<Statement> removeStatement();
+    std::shared_ptr<Statement> findStatement();
+    std::shared_ptr<Statement> find_sameStatement();
     std::shared_ptr<Statement> expressionStatement();
     std::shared_ptr<Statement> declaration();
-    std::shared_ptr<Statement> varDeclaration();
+    std::shared_ptr<Statement> floatVarDeclaration();
+    std::shared_ptr<Statement> intVarDeclaration();
+    std::shared_ptr<Statement> stringVarDeclaration();
+    std::shared_ptr<Statement> charVarDeclaration();
+    std::shared_ptr<Statement> fileVarDeclaration();
+    std::shared_ptr<Statement> boolVarDeclaration();
     std::shared_ptr<Expression> expression();
     std::shared_ptr<Expression> assignment();
     std::shared_ptr<Expression> equality();
@@ -50,9 +64,10 @@ private:
     std::shared_ptr<Expression> multiplication();
     std::shared_ptr<Expression> unary();
     std::shared_ptr<Expression> primary();
+    std::shared_ptr<Expression> OR();
+    std::shared_ptr<Expression> AND();
     Token consume(TokenType type, const String& message);
-    ParseError error(const Token& token, const String& message) const;
-    void synchronize();
+    void error(const Token& token, const String& message) const;
 
     Array<Token> tokens{};
     int current{};

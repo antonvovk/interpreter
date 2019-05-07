@@ -16,6 +16,10 @@
 #include "Statements/If.h"
 #include "Statements/Print.h"
 #include "Statements/Move.h"
+#include "Statements/Copy.h"
+#include "Statements/Remove.h"
+#include "Statements/Find.h"
+#include "Statements/FindSame.h"
 #include "Statements/Var.h"
 #include "Statements/While.h"
 #include "Environment.h"
@@ -46,6 +50,10 @@ private:
     Object visit(If &stmnt) override;
     Object visit(Print &stmnt) override;
     Object visit(Move &stmnt) override;
+    Object visit(Copy &stmnt) override;
+    Object visit(Remove &stmnt) override;
+    Object visit(Find &stmnt) override;
+    Object visit(FindSame &stmnt) override;
     Object visit(Var &stmnt) override;
     Object visit(While &stmnt) override;
     void execute(const std::shared_ptr<Statement>& stmt);

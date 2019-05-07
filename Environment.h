@@ -10,6 +10,8 @@ public:
     virtual void define(const String& name, const Object& value) const = 0;
     virtual Object get(const Token& name) const = 0;
     virtual void assign(Token name, Object value) const = 0;
+    virtual void assign(String name, Object value) const = 0;
+    virtual void deleteVar(String name) = 0;
 };
 
 class Environment : public IEnvironment {
@@ -18,6 +20,8 @@ public:
     void define(const String& name, const Object& value) const override;
     Object get(const Token& name) const override;
     void assign(Token name, Object value) const override;
+    void assign(String name, Object value) const override;
+    void deleteVar(String name) override;
 private:
     mutable Map<String, Object> values{};
     std::shared_ptr<Environment> enclosing{};

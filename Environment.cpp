@@ -11,6 +11,7 @@ void Environment::define(const String& name, const Object& value) const {
     else {
         values.insert(std::make_pair(name, value));
     }
+
 }
 
 Object Environment::get(const Token& name) const {
@@ -40,7 +41,22 @@ void Environment::assign(Token name, Object value) const {
     throw RuntimeError(name, "Undefined variable '" + name.Lexeme() + "'.");
 }
 
+void Environment::assign(String name, Object value) const {
+    for (auto &i : values) {
+        if (objectToString(i.second) == name) {
+            i.second = value;
+            break;
+        }
+    }
 
+    //throw RuntimeError(name, String("Undefined variable ") + name + String("."));
+}
 
-
-
+void Environment::deleteVar(String name) {
+    for (auto &i : values) {
+        if (objectToString(i.second) == name) {
+            values.erase(i.first);
+            break;
+        }
+    }
+}

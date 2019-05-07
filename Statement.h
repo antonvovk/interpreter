@@ -9,6 +9,10 @@ class ExpressionStmnt;
 class If;
 class Print;
 class Move;
+class Copy;
+class Remove;
+class Find;
+class FindSame;
 class Var;
 class While;
 
@@ -21,6 +25,10 @@ public:
         virtual Object visit(If &stmnt) = 0;
         virtual Object visit(Print &stmnt) = 0;
         virtual Object visit(Move &stmnt) = 0;
+        virtual Object visit(Copy &stmnt) = 0;
+        virtual Object visit(Remove &stmnt) = 0;
+        virtual Object visit(Find &stmnt) = 0;
+        virtual Object visit(FindSame &stmnt) = 0;
         virtual Object visit(Var &stmnt) = 0;
         virtual Object visit(While &stmnt) = 0;
     };

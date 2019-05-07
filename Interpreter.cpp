@@ -21,6 +21,11 @@ void Interpreter::interpret(Array<std::shared_ptr<Statement>> statements) {
 Object Interpreter::visit(Assign &expr) {
     Object value = evaluate(expr.Value());
 
+    if (environment.get(expr.Name()).type() != value.type()) {
+        RuntimeError(expr.Name(), "Can not do assigment because of uncorrect types.");
+        exit(0);
+    }
+
     environment.assign(expr.Name(), value);
     return value;
 }
@@ -159,7 +164,10 @@ Object Interpreter::visit(Binary &expr) {
             }
 
         case TokenType::PLUS:
-            if (right.type() == typeid(short)) {
+            if (left.type() == typeid(int) && right.type() == typeid(String)) {
+                return std::to_string(std::any_cast<int>(left)) + std::any_cast<String >(right);
+            }
+            else if (right.type() == typeid(short)) {
                 return std::any_cast<short>(left) + std::any_cast<short>(right);
             }
             else if (right.type() == typeid(int)) {
@@ -184,7 +192,9 @@ Object Interpreter::visit(Binary &expr) {
                 return std::any_cast<String>(left) + std::any_cast<String>(right);
             }
 
-            throw RuntimeError(expr.Operatr(), "Operands must be two numbers or two strings.");
+
+
+            RuntimeError(expr.Operatr(), "Operands must be two numbers or two strings.");
 
         case TokenType::SLASH:
             checkNumberOperands(expr.Operatr(), left, right);
@@ -250,7 +260,15 @@ Object Interpreter::visit(Literal &expr) {
 }
 
 Object Interpreter::visit(Logical &expr) {
-    return Object();
+    Object left = evaluate(expr.Left());
+
+    if (expr.Operatr().Type() == TokenType::_from_string("OR")) {
+        if (isTruthy(left)) return left;
+    } else {
+        if (!isTruthy(left)) return left;
+    }
+
+    return evaluate(expr.Right());
 }
 
 Object Interpreter::visit(Unary &expr) {
@@ -345,7 +363,7 @@ void Interpreter::checkNumberOperand(Token operatr, const Object& operand) {
         return;
     }
 
-    throw RuntimeError(std::move(operatr), "Operand must be a number.");
+    RuntimeError(std::move(operatr), "Operand must be a number.");
 }
 
 void Interpreter::checkNumberOperands(Token operatr, const Object& left, const Object& right) {
@@ -361,7 +379,7 @@ void Interpreter::checkNumberOperands(Token operatr, const Object& left, const O
          return;
     }
 
-    throw RuntimeError(std::move(operatr), "Operands must be numbers.");
+    RuntimeError(std::move(operatr), "Operands must be numbers.");
 }
 
 Object Interpreter::visit(Block &stmnt) {
@@ -376,6 +394,12 @@ Object Interpreter::visit(ExpressionStmnt &stmnt) {
 
 
 Object Interpreter::visit(If &stmnt) {
+    if (isTruthy(evaluate(stmnt.Condition()))) {
+        execute(stmnt.ThenBranch());
+    }
+    else if (stmnt.ElseBranch() != nullptr) {
+        execute(stmnt.ElseBranch());
+    }
     return nullptr;
 }
 
@@ -388,7 +412,46 @@ Object Interpreter::visit(Print &stmnt) {
 Object Interpreter::visit(Move &stmnt) {
     Object value1 = evaluate(stmnt.Expr1());
     Object value2 = evaluate(stmnt.Expr2());
-    std::cout << objectToString(value1) << objectToString(value2) << '\n';
+    String to_shell = "mv " + objectToString(value1) + " " + objectToString(value2);
+    system(to_shell.data());
+
+    environment.assign(objectToString(value2), objectToString(value1));
+
+    return nullptr;
+}
+
+Object Interpreter::visit(Copy &stmnt) {
+    Object value1 = evaluate(stmnt.Expr1());
+    Object value2 = evaluate(stmnt.Expr2());
+    String to_shell = "cp " + objectToString(value1) + " " + objectToString(value2);
+    system(to_shell.data());
+    return nullptr;
+}
+
+Object Interpreter::visit(Remove &stmnt) {
+    Object value = evaluate(stmnt.Expr());
+
+    String to_shell = "rm -rf " + objectToString(value);
+    system(to_shell.data());
+
+    environment.deleteVar(objectToString(value));
+
+    return nullptr;
+}
+
+Object Interpreter::visit(Find &stmnt) {
+    Object value = evaluate(stmnt.Expr());
+
+    String to_shell = "find . -name \"" + objectToString(value) + "\"";
+    system(to_shell.data());
+    return nullptr;
+}
+
+Object Interpreter::visit(FindSame &stmnt) {
+    Object value = evaluate(stmnt.Expr());
+
+    String to_shell = "fdupes -r " + objectToString(value);
+    system(to_shell.data());
     return nullptr;
 }
 
@@ -398,11 +461,19 @@ Object Interpreter::visit(Var &stmnt) {
         value = evaluate(stmnt.Initializer());
     }
 
+    if (stmnt.Type() == "File") {
+        String to_shell = "touch " + objectToString(value);
+        system(to_shell.data());
+    }
+
     environment.define(stmnt.Name().Lexeme(), value);
     return nullptr;
 }
 
 Object Interpreter::visit(While &stmnt) {
+    while (isTruthy(evaluate(stmnt.Condition()))) {
+        execute(stmnt.Body());
+    }
     return nullptr;
 }
 
@@ -417,6 +488,4 @@ void Interpreter::executeBlock(const Array<std::shared_ptr<Statement>>& statemen
     for (const std::shared_ptr<Statement>& statement : statements) {
         execute(statement);
     }
-
-    this->environment = previous;
 }

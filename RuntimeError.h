@@ -6,9 +6,8 @@
 
 class RuntimeError : public Exception {
 public:
-    RuntimeError(Token token, const String& message) {
-        std::cout << message;
-        this->token = std::move(token);
+    RuntimeError(const Token& token, const String& message) {
+        std::cout << message << "; At line" << token.toString();
     }
 private:
     Token token;

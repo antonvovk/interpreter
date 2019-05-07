@@ -28,4 +28,4 @@ add_executable(interpreter
         Scanner.h
         Token.cpp
         Token.h
-        Utils.h Parser.cpp Parser.h ParseError.h Interpreter.cpp Interpreter.h RuntimeError.h Utils.cpp Statement.h Statements/Block.cpp Statements/Block.h Statements/ExpressionStmnt.cpp Statements/ExpressionStmnt.h Statements/If.cpp Statements/If.h Statements/Print.cpp Statements/Print.h Statements/Var.cpp Statements/Var.h Statements/While.cpp Statements/While.h Environment.cpp Environment.h Statements/Move.cpp Statements/Move.h)
+        Utils.h Parser.cpp Parser.h ParseError.h Interpreter.cpp Interpreter.h RuntimeError.h Utils.cpp Statement.h Statements/Block.cpp Statements/Block.h Statements/ExpressionStmnt.cpp Statements/ExpressionStmnt.h Statements/If.cpp Statements/If.h Statements/Print.cpp Statements/Print.h Statements/Var.cpp Statements/Var.h Statements/While.cpp Statements/While.h Environment.cpp Environment.h Statements/Move.cpp Statements/Move.h Statements/Copy.cpp Statements/Copy.h Statements/Remove.cpp Statements/Remove.h Statements/Find.cpp Statements/Find.h Statements/FindSame.cpp Statements/FindSame.h)
